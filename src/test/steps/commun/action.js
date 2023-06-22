@@ -1,6 +1,6 @@
 const Connexion = require('../../support/commun/action/connexion');
 const CliquerSur = require('../../support/commun/action/cliquerSur');
-//const SaisirTexte = require('../../support/commun/action/saisirTexte');
+const SaisirTexte = require('../../support/commun/action/saisirTexte');
 const { Given, When, Then, And, After } = require('@cucumber/cucumber');
 //const { chromium, test, Browser } = require('@playwright/test');
 

@@ -3,8 +3,8 @@
     
     "Header": "---------------------------------------------------------------------------------------------------------------",
     "Header - Vêtements - Page d'accueil homme": "vêtements",
-    "Header - Champ recherche - Page d'accueil": "vêtements",
-    "Header - Logo Recherhce - Page d'accueil": "vêtements",
+    "Header - Champ recherche - Page d'accueil": "//input[@id='search__basic']",
+    "Header - Logo Recherche - Page d'accueil": "//button[contains(@aria-label,'Rechercher')]",
   
     "Page": "---------------------------------------------------------------------------------------------------------------",
     "Page - Cookies - Page d'accueil": "#ensCancel",
