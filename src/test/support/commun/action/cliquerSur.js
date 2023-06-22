@@ -10,8 +10,10 @@ module.exports = async function cliquerSur(page, locateur) {
         //console.log(aliasLocateur);
         locateur          = GetLocateur(aliasLocateur);
         const element       = await page.locator(locateur);
-        await element.click();
 
+        //if (await element.isVisible()) {
+        await element.click();
+        //}
 
     } catch(error) {
         throw Error(error);

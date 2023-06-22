@@ -1,3 +1,5 @@
+
+
 {
     "default": {
         "formatOptions": {
@@ -10,6 +12,8 @@
         "dryRun": false,
         "require": [
             "src/test/steps/commun/action.js"
-        ]  
+        ],  
+        "timeout": 60000
     }  
+
 }
