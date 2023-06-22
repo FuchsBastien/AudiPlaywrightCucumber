@@ -23,3 +23,5 @@ Given(/^Je saisis "(.*)" dans le champ "(.*)"$/,async (texteASaisir,locateur) =>
     await SaisirTexte(page, texteASaisir, locateur)
 });
 
+// Aghiles
+
