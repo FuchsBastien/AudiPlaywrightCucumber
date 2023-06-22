@@ -7,7 +7,6 @@ const { Given, When, Then, And, After } = require('@cucumber/cucumber');
 //let browser;
 let page;
 
-
 Given(/^Je suis sur le site "(.*)"$/, async (url) => {
     /*browser = await chromium.launch({headless: false, slowMo: 400});
     page = await browser.newPage();

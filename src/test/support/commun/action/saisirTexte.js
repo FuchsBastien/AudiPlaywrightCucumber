@@ -6,7 +6,7 @@ const GetLocateur  = require('../../mapping/fonctions/locateurs');
  */
 
 module.exports = async function saisirTexte(page, texteASaisir, locateur) {
-
+    console.log("fonction saisirTexte");
         locateur = GetLocateur(locateur)
         const element = await page.locator(locateur);
 
