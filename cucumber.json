@@ -1,0 +1,15 @@
+{
+    "default": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "src/test/features/webDesktop/accueil/Accueil_login.feature"
+        ],
+        "publishQuiet": true,
+        "dryRun": false,
+        "require": [
+            "src/test/steps/commun/action.js"
+        ]  
+    }  
+}
