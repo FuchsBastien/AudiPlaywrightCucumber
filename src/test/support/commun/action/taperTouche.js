@@ -5,5 +5,5 @@
 
 module.exports = async function cliquerSur(page, toucheClavier) {
         console.log("fonction taperSur");
-        await page.keyboard.press("Enter");
+        await page.keyboard.press(toucheClavier);
 };
