@@ -6,7 +6,7 @@
             "snippetInterface": "async-await"
         },
         "paths": [
-            "src/test/features/webDesktop/accueil/Accueil_login.feature"
+            "src/test/features/webDesktop/accueil/Accueil_recherche.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,
