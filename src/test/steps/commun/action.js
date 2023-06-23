@@ -27,4 +27,8 @@ Given(/^Je tape sur la touche du clavier "([^"]*)?"$/,async (toucheClavier) =>  
     await TaperTouche(page, toucheClavier)
 });
 
+Given(/^Je coche la case "(.*)"$/,async (locateur) =>  {
+    await CliquerSur(page, locateur)
+});
+
 

@@ -1,0 +1,15 @@
+{
+    "PAGE": "Page d'accueil Audi France",
+
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    
+    "Configurer - Page d'accueil Audi France": "(//a[@href='https://www.audi.fr/fr/web/fr/gamme/q4-e-tron/audi-q4-e-tron/finitions.html'][contains(.,'Configurer')])[1]",
+
+    "Cocher Design Luxe - Page d'accueil Audi France": "(//a[@href='#'])[9]",
+
+    "Votre Audi - Page d'accueil Audi France": "(//a[@class=' nm-pageOpen audi-basket-button-cta audi-button audi-button--inverted'][contains(.,'Votre Audi')])[1]",
+
+    "Enregistrer la configuration - Page d'accueil Audi France": "(//a[@href='/fr/web/fr/tools/nemo/commons/new-save-configuration.html'][contains(.,'Enregistrer la configuration')])[1]",
+
+    "Se conecter - Page d'accueil Audi France": "#login"
+}
