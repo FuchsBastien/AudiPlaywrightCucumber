@@ -1,0 +1,16 @@
+{
+    "PAGE": "Espace Personnel",
+    
+    "Header": "---------------------------------------------------------------------------------------------------------------",
+    "Header - Lien Aller sur myAudi - Espace Personnel": "//span[contains(.,'Aller sur myAudi')]",
+
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Page - Cookies - Espace Personnel" : "//button[contains(@aria-label,'Close Consent Modal')]",
+    "Page - Bouton poursuivre vers myAudi - Espace Personnel" : "(//span[contains(.,'Poursuivre vers myAudi')])[2]",
+    "Page - Bouton c'est parti - Espace Personnel" : "(//span[contains(.,'est parti')])[2]",
+    "Page - Champ mail - Espace Personnel" : "//input[@id='input_email']",
+    "Page - Champ password - Espace Personnel" : "//input[@id='password']",
+    "Page - Bouton suivant - Espace Personnel" : "//button[@id='next-btn']",
+    
+    "Footer": "--------------------------------------------------------------------------------------------------------------"
+}
