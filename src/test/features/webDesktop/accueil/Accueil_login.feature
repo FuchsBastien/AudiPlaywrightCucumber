@@ -5,6 +5,7 @@ Feature: Accueil_login
     And Je clique sur "Page - Cookies - Page d'accueil"
 
   Scenario: Accueil_login
+    When Je clique sur "Header - Menu - Page d'accueil"
     And Je clique sur "Header - Lien Votre Audi - Page d'accueil"
     And Je clique sur "Header - Lien Espace Personnel myAudi - Page d'accueil"
     And Je clique sur "Header - Lien Aller sur myAudi - Espace Personnel"
@@ -17,6 +18,8 @@ Feature: Accueil_login
     And Je clique sur "Page - Champ password - Espace Personnel"
     And Je saisis "testGroupBA" dans le champ "Page - Champ password - Espace Personnel"
     And Je clique sur "Page - Bouton suivant - Espace Personnel"
+    And J'attend et je clique sur "Page - Fleche mon compte - Espace Personnel"
+    And Je clique sur "Page - Configurations enregistrees - Espace Personnel"
 
   
  

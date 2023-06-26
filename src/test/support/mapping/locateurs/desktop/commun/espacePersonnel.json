@@ -11,6 +11,8 @@
     "Page - Champ mail - Espace Personnel" : "//input[@id='input_email']",
     "Page - Champ password - Espace Personnel" : "//input[@id='password']",
     "Page - Bouton suivant - Espace Personnel" : "//button[@id='next-btn']",
+    "Page - Fleche mon compte - Espace Personnel": "//svg[contains(@class,'myaComponents-IconsStyledIcon-jkAKa nDaaY')]",
+    "Page - Configurations enregistrees - Espace Personnel": "//a[@href='/configurations']",
     "Page - Bouton voir mes configuration - Espace Personnel" : "//a[contains(@data-testid,'configurations-button')]",
     "Page - Cookies - Mes Configuratin": "#ensCancelText",
     "Page - Poursuivre vers myAudi - Mes Configuration": "#root > div > div > div > div.myaComponents-FocusmodeContainerFocusmodeContainer-bLraci.hyQjlV > div > div.myaComponents-GridColumn-eoMRkg.ecXvSB > div > div > div > div > button",
