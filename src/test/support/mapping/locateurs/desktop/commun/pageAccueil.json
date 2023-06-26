@@ -8,8 +8,9 @@
     "Header - Lien Espace Personnel myAudi - Page d'accueil": "//a[@aria-label='Espace personnel myAudi']",
   
     "Page": "---------------------------------------------------------------------------------------------------------------",
-    "Page - Cookies - Page d'accueil": "#ensCancel",
+    "Page - Cookies - Page d'accueil": "//button[@id='ensCancel']",
     "Page - Bouton Découvrir": "//a[contains(.,'Découvrir l’Audi Q4 e-tron')]",
 
     "Footer": "--------------------------------------------------------------------------------------------------------------"
 }
+

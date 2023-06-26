@@ -1,4 +1,6 @@
 const GetLocateur  = require('../../mapping/fonctions/locateurs');
+const ScreenshotErreur  = require('../navigation/screenshotErreur');
+
 /**
  * Saisir un texte
  * @param  {String} texteASaisir - texte a saisir dans l'element
@@ -15,6 +17,8 @@ module.exports = async function saisirTexte(page, texteASaisir, locateur) {
             await element.fill(texteASaisir)
 
         } catch (error) {
+            let actionImpossible = "impossibleDeSaisirTexte"
+            ScreenshotErreur(actionImpossible);
             throw Error(error);
             //await attendreSecondes(1)
             //Saisie du texte dans l'element
