@@ -41,7 +41,3 @@ Given("Je souhaite créer un dossier avec le nom du scénario" , function () {
     const scenarioName = this.pickle;
     console.log('Nom du scénario:', scenarioName);
 });
-
-//commentaires
-//Aghiles
-

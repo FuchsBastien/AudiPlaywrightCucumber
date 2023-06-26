@@ -18,6 +18,11 @@ Feature: Accueil_login
     And Je clique sur "Page - Champ password - Espace Personnel"
     And Je saisis "testGroupBA" dans le champ "Page - Champ password - Espace Personnel"
     And Je clique sur "Page - Bouton suivant - Espace Personnel"
+    And J'attend et je clique sur "Page - Bouton Mon nom"
+    And Je clique sur "Page - Bouton Configurations enregistrées"
+    And J'attend et je clique sur "Page - Bouton Mon nom"
+    And Je clique sur "Page - Bouton Se deconnecter"
+
 
   
  

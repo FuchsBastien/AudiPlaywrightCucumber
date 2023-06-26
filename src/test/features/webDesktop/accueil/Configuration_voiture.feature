@@ -11,7 +11,7 @@ Feature: Configuration_voiture
         And Je clique sur "Suivant (Moteurs) - Page d'accueil Audi France"
         And Je clique sur "Suivant (Exterieur) - Page d'accueil Audi France"
         And Je clique sur "Couleurs métallisées - Page d'accueil Audi France"
-        And Je clique sur "Jantes 19' - Page d'accueil Audi France"
+        And Je clique sur "Jantes 20' - Page d'accueil Audi France"
         And Je clique sur "Suivant (Interieur) - Page d'accueil Audi France"
         And Je clique sur "Volant en cuir sport à branches doubles - Page d'accueil Audi France"
         And Je clique sur "Votre Audi - Page d'accueil Audi France"

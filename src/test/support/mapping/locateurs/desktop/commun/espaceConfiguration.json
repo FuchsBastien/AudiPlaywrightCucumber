@@ -19,7 +19,7 @@
 
     "Couleurs métallisées - Page d'accueil Audi France": "//img[@src='//mediaservice.audi.com/media/cdb/data/b5666895-161d-4b63-ba60-818253888e29.jpg?alt=//www.audi.fr/bin/nemo.static/cms4i-nemo/assets/img/fallback/fb-pattern.png']",
 
-    "Jantes 19' - Page d'accueil Audi France": "body > div.nm-wrapper > div.nm-wrapper-content > div > div.nm-content.clearfix > div:nth-child(2) > div.content.parsys > div:nth-child(6) > audi-configurator-tile-list:nth-child(2) > div > ul > li.nm-j-configurator-item.nm-j-configurator-status_11000 > div > div.nm-module-tiles-categorized-tile > div > img",
+    "Jantes 20' - Page d'accueil Audi France": "//img[@src='//mediaservice.audi.com/media/cdb/data/170907f0-ed33-48f0-ab67-fff7f333fb06.jpg?alt=//www.audi.fr/bin/nemo.static/cms4i-nemo/assets/img/fallback/fb-rim.png']",
 
     "Suivant (Interieur) - Page d'accueil Audi France": "(//a[@class='audi-button audi-button--ghost audi-button--inverted nm-pageOpen'][contains(.,'Suivant (Intérieur)')])[1]",
 
