@@ -2,9 +2,10 @@
     "PAGE": "Page d'accueil",
     
     "Header": "---------------------------------------------------------------------------------------------------------------",
+    "Header - Menu - Page d'accueil": "//div[contains(@class,'AudiHeaderMenuButton__StyledMenuButtonIcon-sc-8wf3as-1 isiXzB')]",
     "Header - Champ recherche - Page d'accueil": "//input[@id='search__basic']",
     "Header - Logo Recherche - Page d'accueil": "//button[contains(@aria-label,'Rechercher')]",
-    "Header - Lien Votre Audi - Page d'accueil": "(//span[contains(text(), 'Votre Audi')])[1]",
+    "Header - Lien Votre Audi - Page d'accueil": "(//span[contains(.,'Votre Audi')])[1]",
     "Header - Lien Espace Personnel myAudi - Page d'accueil": "//a[@aria-label='Espace personnel myAudi']",
     "Header - Lien offre choisi dans recherche - Page d'accueil": "(//span[contains(.,'Audi Q3 Sportback')])[2]",
     "Header - Information importante - Page d'accueil": "body > modal-layer-wrapper > div.modal-layer__content.modal-layer__content--show.nm-module-interstitial-layer > modal-layer-interstitial-element > div > div.modal-layer__inner-content > div > div.nm-layer-content.clearfix > div.nm-3col.clearfix > div > a",

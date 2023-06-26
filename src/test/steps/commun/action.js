@@ -7,7 +7,7 @@ const { Given, When, Then, And, After } = require('@cucumber/cucumber');
 const CliquerSurEtAttendre = require('../../support/commun/action/cliquerSurEtAttendre');
 //const { chromium, test, Browser } = require('@playwright/test');
 
-//let browser;
+let browser;
 let page;
 
 Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
@@ -25,7 +25,7 @@ Given(/^Je saisis "(.*)" dans le champ "(.*)"$/, {timeout: 25000}, async (texteA
     await SaisirTexte(page, texteASaisir, locateur)
 });
 
-Given(/^Je tape sur la touche du clavier "([^"]*)?"$/,async (toucheClavier) =>  {
+Given(/^Je tape sur la touche du clavier "([^"]*)?"$/, {timeout: 30000}, async (toucheClavier) =>  {
     await TaperTouche(page, toucheClavier)
 });
 
@@ -41,7 +41,6 @@ Given("Je souhaite créer un dossier avec le nom du scénario" , function () {
     const scenarioName = this.pickle;
     console.log('Nom du scénario:', scenarioName);
 });
-
 
 //commentaires
 
