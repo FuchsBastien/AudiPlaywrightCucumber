@@ -5,18 +5,22 @@ const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 module.exports = async function cliquerSurEtAttendre(page, locateur) {
     console.log("fonction cliquerSurEtAttendre");
-  
+    //let cookie = await page.locator("#uc-btn-accept-banner");
+    //await cookie.click();
+ 
     try {
         const aliasLocateur = String(locateur);
+        //console.log(aliasLocateur);
         locateur          = GetLocateur(aliasLocateur);
         const element       = await page.locator(locateur);
 
         //if (await element.isVisible()) {
-            //Attendre avant de cliquer
-            await page.waitForTimeout(20000);
-            //Click dans l'element
-            await element.click();
             //AttendreSecondes(page, 1);
+            //await page.waitForLoadState('networkidle'); 
+            //await page.pause();
+            await page.waitForTimeout(20000);
+            await element.click();
+
         //}
 
     } catch(error) {

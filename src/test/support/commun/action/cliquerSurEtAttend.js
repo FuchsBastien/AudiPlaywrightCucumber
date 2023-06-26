@@ -1,10 +1,9 @@
 const GetLocateur  = require('../../mapping/fonctions/locateurs');
 const ScreenshotErreur  = require('../navigation/screenshotErreur');
-const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 
-module.exports = async function cliquerSur(page, locateur) {
-    console.log("fonction cliquerSur");
+module.exports = async function cliquerSurEtAttend(page, locateur) {
+    console.log("fonction cliquerSurEtAttend");
     //let cookie = await page.locator("#uc-btn-accept-banner");
     //await cookie.click();
  
@@ -15,8 +14,8 @@ module.exports = async function cliquerSur(page, locateur) {
         const element       = await page.locator(locateur);
 
         //if (await element.isVisible()) {
-            //AttendreSecondes(page, 1);
-            await element.click();
+        
+        await element.click();
         //}
 
     } catch(error) {

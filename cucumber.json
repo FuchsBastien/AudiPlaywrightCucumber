@@ -1,10 +1,13 @@
+
+
 {
     "default": {
         "formatOptions": {
             "snippetInterface": "async-await"
         },
         "paths": [
-            "src/test/features/webDesktop/accueil/Login_compte.feature"
+            "src/test/features/webDesktop/accueil/Configuration_Voiture.feature",
+            "src/test/features/webDesktop/accueil/Accueil_login.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,
