@@ -27,5 +27,3 @@ Given(/^Je saisis "(.*)" dans le champ "(.*)"$/,async (texteASaisir,locateur) =>
 Given(/^Je tape sur la touche du clavier "([^"]*)?"$/,async (toucheClavier) =>  {
     await TaperTouche(page, toucheClavier)
 });
-
-
