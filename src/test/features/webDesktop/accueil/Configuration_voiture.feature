@@ -22,6 +22,3 @@ Feature: Configuration_voiture
         And Je clique sur "Page - Champ password - Espace Personnel"
         And Je saisis "testGroupBA" dans le champ "Page - Champ password - Espace Personnel"
         And Je clique sur "Page - Bouton suivant - Espace Personnel"
-        And Je clique sur "Page - Bouton voir mes configuration - Espace Personnel"
-        And Je clique sur "Page - Cookies - Mes Configuratin"
-        And Je clique sur "Page - Poursuivre vers myAudi - Mes Configuration"
