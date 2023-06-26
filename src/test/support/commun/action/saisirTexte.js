@@ -10,22 +10,19 @@ const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 module.exports = async function saisirTexte(page, texteASaisir, locateur) {
     console.log("fonction saisirTexte");
-        locateur = GetLocateur(locateur)
-        const element = await page.locator(locateur);
-
+       
         try {
+            locateur = GetLocateur(locateur)
+            const element = await page.locator(locateur);
             //Saisie du texte dans l'element
             await element.fill(texteASaisir);
-            //AttendreSecondes(page, 1);
 
         } catch (error) {
             let actionImpossible = "impossibleDeSaisirTexte"
             ScreenshotErreur(actionImpossible);
             throw Error(error);
             //await attendreSecondes(1)
-            //Saisie du texte dans l'element
-            //await element.setValue("")
-            //await element.setValue(texteASaisir)
+            
         }
   
 

@@ -5,18 +5,16 @@ const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 module.exports = async function cliquerSur(page, locateur) {
     console.log("fonction cliquerSur");
-    //let cookie = await page.locator("#uc-btn-accept-banner");
-    //await cookie.click();
- 
+    
     try {
         const aliasLocateur = String(locateur);
-        //console.log(aliasLocateur);
         locateur          = GetLocateur(aliasLocateur);
         const element       = await page.locator(locateur);
 
         //if (await element.isVisible()) {
-            //AttendreSecondes(page, 1);
+            //Click dans l'element
             await element.click();
+            //AttendreSecondes(page, 1);
         //}
 
     } catch(error) {
