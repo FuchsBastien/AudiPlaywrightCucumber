@@ -14,6 +14,8 @@
     "Page - Bouton voir mes configuration - Espace Personnel" : "//a[contains(@data-testid,'configurations-button')]",
     "Page - Cookies - Mes Configuratin": "#ensCancelText",
     "Page - Poursuivre vers myAudi - Mes Configuration": "#root > div > div > div > div.myaComponents-FocusmodeContainerFocusmodeContainer-bLraci.hyQjlV > div > div.myaComponents-GridColumn-eoMRkg.ecXvSB > div > div > div > div > button",
-    
+    "Page - Bouton Mon nom" : "//span[contains(@data-testingid,'USERNAME')]",
+    "Page - Bouton Configurations enregistrées" : "//a[@href='/configurations']",
+
     "Footer": "--------------------------------------------------------------------------------------------------------------"
 }

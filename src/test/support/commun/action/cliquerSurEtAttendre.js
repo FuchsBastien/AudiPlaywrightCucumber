@@ -3,8 +3,8 @@ const ScreenshotErreur  = require('../navigation/screenshotErreur');
 const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 
-module.exports = async function cliquerSur(page, locateur) {
-    console.log("fonction cliquerSur");
+module.exports = async function cliquerSurEtAttendre(page, locateur) {
+    console.log("fonction cliquerSurEtAttendre");
     //let cookie = await page.locator("#uc-btn-accept-banner");
     //await cookie.click();
  
@@ -16,7 +16,11 @@ module.exports = async function cliquerSur(page, locateur) {
 
         //if (await element.isVisible()) {
             //AttendreSecondes(page, 1);
+            //await page.waitForLoadState('networkidle'); 
+            //await page.pause();
+            await page.waitForTimeout(20000);
             await element.click();
+
         //}
 
     } catch(error) {
