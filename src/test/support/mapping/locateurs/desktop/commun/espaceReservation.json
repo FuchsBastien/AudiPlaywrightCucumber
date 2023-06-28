@@ -1,0 +1,32 @@
+{
+    "PAGE": "Espace Resarvation",
+    
+    "Header": "---------------------------------------------------------------------------------------------------------------",
+    
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Page - Plus d'information A5 Cabriolet - Espace Reservation": "//a[@href='/fr/web/fr/gamme/a5/a5-cabriolet.html']",
+    "Page - Fermer INFORMATION IMPORTANTE - Espace Reservation": "//span[@class='audi-button__text'][contains(.,'Fermer')]",
+    "Page - Reserver un essai - Espace Reservation": "(//a[contains(.,'Réserver un essai')])[2]",
+    "Page - Saisissez votre email - Espace Reservation": "#info_ctc_email",
+    "Page - Valider votre email - Espace Reservation": "//button[contains(@id,'info_confirm-email')]",
+    "Page - Delai d'achat - Espace Reservation": "(//b[@class='button'][contains(.,'▾')])[3]",
+    "Page - Plus de 12 mois - Espace Reservation": "//li[@data-index='3'][contains(.,'Plus de 12 mois')]",
+    "Page - Type d'achat - Espace Reservation": "(//b[@class='button'][contains(.,'▾')])[5]",
+    "Page - Neuf - Espace Reservation": "//li[@data-index='1'][contains(.,'Neuf')]",
+    "Page - Usage - Espace Reservation": "(//b[@class='button'][contains(.,'▾')])[4]",
+    "Page - Prive - Espace Reservation": "//li[@data-index='1'][contains(.,'Privé')]",
+    "Page - Code postal - Espace Reservation": "//input[contains(@id,'information_request_cp')]",
+    "Page - AUDI SEINE (1.6KM) - Espace Reservation": "//label[@for='information_request[salesPartnerId]371']",
+    "Page - Suivant - Espace Reservation": "//button[contains(@id,'info_gotostep3')]",
+    "Page - Gener M - Espace Reservation": "//label[@for='information_request_gender_1'][contains(.,'M')]",
+    "Page - Nom - Espace Reservation": "//input[contains(@id,'info_name')]",
+    "Page - Prenom - Espace Reservation": "//input[contains(@id,'info_firstname')]",
+    "Page - Telephone - Espace Reservation": "//input[contains(@id,'info_tel')]",
+    "Page - Annee de naissance - Espace Reservation": "(//b[@class='button'][contains(.,'▾')])[15]",
+    "Page - 1996 - Espace Reservation": "//li[@data-index='10'][contains(.,'1996')]",
+    "Page - Cocher J'accepte les conditions - Espace Reservation": "//label[contains(@for,'info_approve')]",
+    "Page - Envoyer - Espace Reservation": "//button[contains(@id,'info_send_data')]",
+
+    "Footer": "--------------------------------------------------------------------------------------------------------------"
+}
+

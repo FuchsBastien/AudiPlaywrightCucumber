@@ -5,6 +5,8 @@ const TaperTouche = require('../../support/commun/action/taperTouche');
 const Cocher = require('../../support/commun/action/cocher');
 const { Given, When, Then, And, After } = require('@cucumber/cucumber');
 const CliquerSurEtAttendre = require('../../support/commun/action/cliquerSurEtAttendre');
+const SwitchToIframe = require('../../support/commun/action/switchToIframe');
+const ClickButtonInsideIframe = require('../../support/commun/action/clickButtonInsideIframe');
 //const { chromium, test, Browser } = require('@playwright/test');
 
 let browser;
@@ -35,6 +37,16 @@ Given(/^Je coche la case "(.*)"$/,async (locateur) =>  {
 
 Given( /^J'attend et je clique sur "(.*)"$/, {timeout: 25000}, async (locateur) =>  {
     await CliquerSurEtAttendre(page, locateur)
+});
+
+Given(/^Je bascule vers la fenetre "(.*)"$/, {timeout: 25000}, async (iframeLocator) =>  {
+    //page = await Navigation(page)
+    this.iframe = await SwitchToIframe(this.page, iframeLocator);
+});
+
+Given( /^Je clique sur bouton Iframe "(.*)"$/, {timeout: 25000}, async (buttonLocator) =>  {
+    //await CliquerSurIframe(page, locateur)
+    await ClickButtonInsideIframe(this.iframe, buttonLocator);
 });
 
 Given("Je souhaite créer un dossier avec le nom du scénario" , function () {

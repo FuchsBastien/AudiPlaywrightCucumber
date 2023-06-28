@@ -3,6 +3,9 @@
     
     "Header": "---------------------------------------------------------------------------------------------------------------",
     "Header - Menu - Page d'accueil": "//div[contains(@class,'AudiHeaderMenuButton__StyledMenuButtonIcon-sc-8wf3as-1 isiXzB')]",
+    "Header - Modeles - Page d'accueil": "(//span[contains(.,'Modèles')])[1]",
+    "Header - Tous les modeles - Page d'accueil": "//a[@tabindex='0'][contains(.,'Tous les modèles')]",
+    "Header - Pour les professionnels - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/fleet/modeles-business.html']",
     "Header - Champ recherche - Page d'accueil": "//input[@id='search__basic']",
     "Header - Logo Recherche - Page d'accueil": "//button[contains(@aria-label,'Rechercher')]",
     "Header - Lien Votre Audi - Page d'accueil": "(//span[contains(.,'Votre Audi')])[1]",
