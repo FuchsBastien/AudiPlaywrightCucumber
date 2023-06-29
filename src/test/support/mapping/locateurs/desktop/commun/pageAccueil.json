@@ -13,6 +13,11 @@
     "Page": "---------------------------------------------------------------------------------------------------------------",
     "Page - Cookies - Page d'accueil": "//button[@id='ensCancel']",
     "Page - Bouton Découvrir": "//a[contains(.,'Découvrir l’Audi Q4 e-tron')]",
+    "Page - Bouton Choix Modèles Véhicules Disponibles - Page d'accueil": "(//label[contains(@class,'label')])[1]",
+    "Page - Bouton Choix Modèle Q8 e-tron Disponible - Page d'accueil": "//span[@class='audi-link-m__text'][normalize-space(.)='Q8 e-tron']",
+    "Page - Bouton Choix Modèle A3 sportback Disponible - Page d'accueil": "//span[@class='audi-link-m__text'][normalize-space(.)='A3 Sportback']",
+    "Page - Lien Q8 e-tron Neufs Disponibles - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/nouvelles-voitures/results.html#filter=carline.q8etron']",
+    "Page - Lien A3 sportback Neufs Disponibles - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/nouvelles-voitures/results.html#filter=carline.a3sb']",
 
     "Footer": "--------------------------------------------------------------------------------------------------------------"
 }
