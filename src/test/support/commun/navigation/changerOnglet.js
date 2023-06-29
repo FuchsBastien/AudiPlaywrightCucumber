@@ -4,10 +4,10 @@
 
 module.exports = async function changerOnglet(page, numOnglet) {
     console.log("fonction changerOnglet");
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
     const context = page.context();
     let pages = await context.pages();
-    console.log(pages);
+    //console.log(pages);
     //const nouvellePage = pages[1];
     page = pages[1];
     return page;

@@ -5,6 +5,7 @@
   
     "Page": "---------------------------------------------------------------------------------------------------------------",
     "Page - Checkbox Stock Audi France - Page recherche Vehicules": "//label[@class='sc-filter-item-label audi-checkbox-label audi-copy-m']",
+    "Page - Nombre résultats Recherche - Page recherche Vehicules":  "(//div [@class='sc-hits-loading-content'])[2]",
     "Page - Premier Résultat Stock - Page recherche Vehicules": "(//h3[@class='audi-headline-order-3'])[1]",
     "Page - Bouton Contacter le partenaire - Page recherche Vehicules": "(//span[contains(.,'Contacter le Partenaire')])[1]",
   

@@ -10,6 +10,7 @@ const SwitchToIframe = require('../../support/commun/action/switchToIframe');
 const ClickButtonInsideIframe = require('../../support/commun/action/clickButtonInsideIframe');
 //const { chromium, test, Browser } = require('@playwright/test');
 const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
+const VerifierTexteElement = require('../../support/commun/verification/verifierTexteElement');
 
 let browser;
 let page;
@@ -56,9 +57,11 @@ Given( /^Je clique sur bouton Iframe "(.*)"$/, {timeout: 25000}, async (buttonLo
 });
 
 /*Given("Je souhaite créer un dossier avec le nom du scénario" , function () {
-
     const scenarioName = this.pickle;
     console.log('Nom du scénario:', scenarioName);
 });*/
 
+Given( /^Je vérifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
+    await VerifierTexteElement(page, locateur, texteAffiche);
+});
 
