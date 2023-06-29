@@ -5,8 +5,11 @@ const SaisirTexte = require('../../support/commun/action/saisirTexte');
 const TaperTouche = require('../../support/commun/action/taperTouche');
 const Cocher = require('../../support/commun/action/cocher');
 const CliquerSurEtAttendre = require('../../support/commun/action/cliquerSurEtAttendre');
-const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
+
+const SwitchToIframe = require('../../support/commun/action/switchToIframe');
+const ClickButtonInsideIframe = require('../../support/commun/action/clickButtonInsideIframe');
 //const { chromium, test, Browser } = require('@playwright/test');
+const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
 
 let browser;
 let page;
@@ -42,7 +45,18 @@ Given(/^Je vais sur l'onglet "(.*)"$/, {timeout: 25000}, async (numOnglet) =>  {
     page = await ChangerOnglet(page, numOnglet)
 });
 
+Given(/^Je bascule vers la fenetre "(.*)"$/, {timeout: 25000}, async (iframeLocator) =>  {
+    //page = await Navigation(page)
+    this.iframe = await SwitchToIframe(this.page, iframeLocator);
+});
+
+Given( /^Je clique sur bouton Iframe "(.*)"$/, {timeout: 25000}, async (buttonLocator) =>  {
+    //await CliquerSurIframe(page, locateur)
+    await ClickButtonInsideIframe(this.iframe, buttonLocator);
+});
+
 /*Given("Je souhaite créer un dossier avec le nom du scénario" , function () {
+
     const scenarioName = this.pickle;
     console.log('Nom du scénario:', scenarioName);
 });*/
