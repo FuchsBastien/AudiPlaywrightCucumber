@@ -6,7 +6,7 @@
             "snippetInterface": "async-await"
         },
         "paths": [
-            "src/test/features/webDesktop/accueil/Etre_rappele.feature"
+            "src/test/features/webDesktop/accueil/Aghiles.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,

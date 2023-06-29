@@ -1,13 +1,15 @@
+const { Given, When, Then, And, After } = require('@cucumber/cucumber');
 const Connexion = require('../../support/commun/action/connexion');
 const CliquerSur = require('../../support/commun/action/cliquerSur');
 const SaisirTexte = require('../../support/commun/action/saisirTexte');
 const TaperTouche = require('../../support/commun/action/taperTouche');
 const Cocher = require('../../support/commun/action/cocher');
-const { Given, When, Then, And, After } = require('@cucumber/cucumber');
 const CliquerSurEtAttendre = require('../../support/commun/action/cliquerSurEtAttendre');
+
 const SwitchToIframe = require('../../support/commun/action/switchToIframe');
 const ClickButtonInsideIframe = require('../../support/commun/action/clickButtonInsideIframe');
 //const { chromium, test, Browser } = require('@playwright/test');
+const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
 
 let browser;
 let page;
@@ -19,7 +21,7 @@ Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
     page = await Connexion(url)
 });
 
-Given( /^Je clique sur "(.*)"$/, {timeout: 25000}, async (locateur) =>  {
+Given(/^Je clique sur "(.*)"$/, {timeout: 25000}, async (locateur) =>  {
     await CliquerSur(page, locateur)
 });
 
@@ -35,8 +37,12 @@ Given(/^Je coche la case "(.*)"$/,async (locateur) =>  {
     await Cocher(page, locateur)
 });
 
-Given( /^J'attend et je clique sur "(.*)"$/, {timeout: 25000}, async (locateur) =>  {
+Given(/^J'attend et je clique sur "(.*)"$/, {timeout: 25000}, async (locateur) =>  {
     await CliquerSurEtAttendre(page, locateur)
+});
+
+Given(/^Je vais sur l'onglet "(.*)"$/, {timeout: 25000}, async (numOnglet) =>  {
+    page = await ChangerOnglet(page, numOnglet)
 });
 
 Given(/^Je bascule vers la fenetre "(.*)"$/, {timeout: 25000}, async (iframeLocator) =>  {
@@ -49,7 +55,10 @@ Given( /^Je clique sur bouton Iframe "(.*)"$/, {timeout: 25000}, async (buttonLo
     await ClickButtonInsideIframe(this.iframe, buttonLocator);
 });
 
-Given("Je souhaite créer un dossier avec le nom du scénario" , function () {
+/*Given("Je souhaite créer un dossier avec le nom du scénario" , function () {
+
     const scenarioName = this.pickle;
     console.log('Nom du scénario:', scenarioName);
-});
+});*/
+
+
