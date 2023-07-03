@@ -15,7 +15,7 @@ module.exports = async function verifierTexteElement(page, locateur, texteAffich
 
     if (texteElement.includes(texteAffiche) == false) {
         let actionImpossible = "texteNonVisible"
-        ScreenshotErreur(actionImpossible);
+        ScreenshotErreur(page, actionImpossible);
         throw Error("Le texte '" + texteElement + "' affiche ne correspond pas à l'attendu '" + texteAffiche + "' \n");
     }
 }

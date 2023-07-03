@@ -21,7 +21,7 @@ module.exports = async function cliquerSur(page, locateur) {
 
     } catch(error) {
         let actionImpossible = "impossibleDeCliquer"
-        ScreenshotErreur(actionImpossible);
+        ScreenshotErreur(page, actionImpossible);
         throw Error(error);
     }
 

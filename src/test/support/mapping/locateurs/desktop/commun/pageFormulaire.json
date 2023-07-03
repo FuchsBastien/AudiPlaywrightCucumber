@@ -4,6 +4,7 @@
     "Header": "---------------------------------------------------------------------------------------------------------------",
   
     "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Page - Titre Identifiez vous - Page formulaire": "//span[text()='Identifiez-vous']",
     "Page - Champ Mail - Page formulaire": "//input[contains(@id,'info_ctc_email')]",
     "Page - Bouton Valider - Page formulaire": "//button[@id='info_confirm-email']",
     "Page - Bouton Revenir à l'accueil - Page formulaire": "//button[@class='button']",

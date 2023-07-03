@@ -20,7 +20,7 @@ module.exports = async function saisirTexte(page, texteASaisir, locateur) {
 
         } catch (error) {
             let actionImpossible = "impossibleDeSaisirTexte"
-            ScreenshotErreur(actionImpossible);
+            ScreenshotErreur(page, actionImpossible);
             throw Error(error);
             //await attendreSecondes(1)
             //Saisie du texte dans l'element
