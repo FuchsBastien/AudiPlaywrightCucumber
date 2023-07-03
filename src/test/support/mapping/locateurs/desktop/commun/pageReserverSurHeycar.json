@@ -1,0 +1,36 @@
+{
+    "PAGE": "Page reserver sur Heycar",
+    
+    "Header": "---------------------------------------------------------------------------------------------------------------",
+  
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Page - Continuez sans accepter - Page reserver sur Heycar": "#modal-root > div > div > div.css-udj3pi > button > span",
+    "Page - Region - Page reserver sur Heycar": "(//div[contains(@class,'css-1m5yx8q')])[1]",
+    "Page - Champ saisir region - Page reserver sur Heycar": "//input[contains(@placeholder,'Région')]",
+    "Page - Île-de-France - Page reserver sur Heycar": "//div[contains(@id,'downshift-0-item-0')]",
+    "Page - Kilométrage Min - Page reserver sur Heycar": "(//input[contains(@name,'min')])[4]",
+    "Page - Couleur du véhicule Noir - Page reserver sur Heycar": "//button[contains(@class,'css-479tnr')]",
+    "Page - Réserver Audi A3Sportback 1.6 TDI 110ch FAP Business line S tronic 7 - Page reserver sur Heycar": "(//button[contains(@data-testid,'buyOnlineButton')])[1]",
+    "Page - Sexe M - Page reserver sur Heycar": "//input[contains(@id,'civilityIdBlock_BV_option_1')]",
+    "Page -  Prenom - Page reserver sur Heycar": "//input[@id='firstnameIdBlock']",
+    "Page -  Nom - Page reserver sur Heycar": "//input[@id='lastnameIdBlock']",
+    "Page -  Adresse - Page reserver sur Heycar": "//input[@id='maMap']",
+    "Page -  Mail - Page reserver sur Heycar": "//input[@id='mailIdBlock']",
+    "Page -  Telephone - Page reserver sur Heycar": "//input[@id='phoneIdBlock']",
+    "Page -  Accepter condition - Page reserver sur Heycar": "//label[@for='mentionId']",
+    "Page -  Suivant vers lieu de rdv - Page reserver sur Heycar": "(//span[contains(.,'Suivant')])[4]",
+    "Page -  Fais livrer à domicile - Page reserver sur Heycar": "//label[contains(@for,'165')]",
+    "Page -  Suivant vers reservation - Page reserver sur Heycar": "//span[contains(.,'Suivant')]",
+    "Page -  Virement sur compte bloqué sécurisé - Page reserver sur Heycar": "//label[@for='__BVID__177']",
+    "Page -  Reserver - Page reserver sur Heycar": "//span[contains(.,'Réserver')]",
+    "Page -  Numéro de carte - Page reserver sur Heycar": "//input[@id='cardNumberField']",
+    "Page -  Mois - Page reserver sur Heycar": "//select[@id='expirydatefield-month']",
+    "Page -  Année - Page reserver sur Heycar": "//select[@id='expirydatefield-year']",
+    "Page -  Cryptogramme visuel - Page reserver sur Heycar": "//input[@id='cvvfield']",
+    "Page -  Enregistrer cette carte (Non) - Page reserver sur Heycar": "//input[@id='radioN']",
+    "Page -  Valider - Page reserver sur Heycar": "//input[contains(@id,'submit')]",
+    "Page -  Numéro de carte non valide - Page reserver sur Heycar": "#cardNumberField-help-block",
+  
+    "Footer": "--------------------------------------------------------------------------------------------------------------"
+}
+
