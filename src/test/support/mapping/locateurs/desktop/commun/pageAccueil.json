@@ -23,6 +23,12 @@
     "Page - Lien A3 sportback Neufs Disponibles - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/nouvelles-voitures/results.html#filter=carline.a3sb']",
 
     "Footer": "--------------------------------------------------------------------------------------------------------------",
+
+    "Footer - Lien Garanties Audi - Page d'accueil": "(//a[text()='Garanties Audi'])[2]"
+  
+  
+  
+  
     "Footer - Heycar - Page d'accueil": "//a[@href='https://heycar.fr/voiture-occasion/audi'][contains(.,'Heycar')]"
 }
 

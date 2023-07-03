@@ -13,6 +13,11 @@
         "require": [
             "src/test/steps/commun/action.js"
         ],  
+
+        "format": [
+            "html:cucumber-report.html"
+        ],  
+        
         "timeout": 60000
     }  
 
