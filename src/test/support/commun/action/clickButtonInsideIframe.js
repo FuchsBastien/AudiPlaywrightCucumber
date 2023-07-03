@@ -1,31 +1,39 @@
-/*const GetLocateur  = require('../../mapping/fonctions/locateurs');
+const SwitchToIframe = require('../action/switchToIframe')
+const GetLocateur  = require('../../mapping/fonctions/locateurs');
 const ScreenshotErreur  = require('../navigation/screenshotErreur');
 const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 
-module.exports = async function cliquerSur(page, locateur) {
-    console.log("fonction cliquerSur");
- 
+/**
+ * Cliquer sur un bouton dans un iframe
+ * @param  {String} locateur - locateur de l'element dans lequel cliquer
+ * @param  {String} iframe - locateur de l'iframe dans lequel cliquer
+ * 
+ */
+
+module.exports = async function clickButtonInsideIframe(locateur, iframe) {
+    console.log("fonction clickButtonInsideIframe");
     try {
+        //Recuperation du locateur reel si alias donne
         const aliasLocateur = String(locateur);
-        locateur          = GetLocateur(aliasLocateur);
-        const element = page.frameLocator("//iframe[@class='iframe']").locator(locateur);
+        const aliasIframe = String(iframe)
+        locateur = GetLocateur(aliasLocateur)
+        iframe = GetLocateur(aliasIframe)
 
-        await element.click();
+        //Recuperation de l'element
+        const element = await page.locator(locateur);
+        
+        await SwitchToIframe(iframe)
+        //Cliquer sur l'element
+        await element.click()
+        
+        //await perdreFocus()
 
-    } catch(error) {
+    } catch (error) {
         let actionImpossible = "impossibleDeCliquer"
         ScreenshotErreur(actionImpossible);
         throw Error(error);
+        
+        //await perdreFocus()
     }
-
-}*/
-
-module.exports = async function clickButtonInsideIframe(page, buttonLocator) {
-
-    //await page.waitForTimeout(10000);
-    await page.click(buttonLocator);
-  
-    // You can add any additional steps or assertions here
 }
-  

@@ -18,7 +18,7 @@ module.exports = async function cliquerSurEtAttendre(page, locateur) {
             //AttendreSecondes(page, 1);
             //await page.waitForLoadState('networkidle'); 
             //await page.pause();
-            await page.waitForTimeout(20000);
+            await page.waitForTimeout(10000);
             await element.click();
 
         //}
