@@ -2,7 +2,7 @@
     "PAGE": "Page d'accueil",
     
     "Header": "---------------------------------------------------------------------------------------------------------------",
-    "Header - Menu - Page d'accueil": "//div[contains(@class,'AudiHeaderMenuButton__StyledMenuButtonIcon-sc-8wf3as-1 isiXzB')]",
+    "Header - Menu - Page d'accueil": "//div[contains(@class,'AudiHeaderMenuButton__StyledMenuButtonIconBottomLine-sc-1o5s5j3-5 jriveE')]",
     "Header - Modeles - Page d'accueil": "(//span[contains(.,'Modèles')])[1]",
     "Header - Tous les modeles - Page d'accueil": "//a[@tabindex='0'][contains(.,'Tous les modèles')]",
     "Header - Pour les professionnels - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/fleet/modeles-business.html']",
@@ -22,6 +22,7 @@
     "Page - Lien Q8 e-tron Neufs Disponibles - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/nouvelles-voitures/results.html#filter=carline.q8etron']",
     "Page - Lien A3 sportback Neufs Disponibles - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/nouvelles-voitures/results.html#filter=carline.a3sb']",
 
-    "Footer": "--------------------------------------------------------------------------------------------------------------"
+    "Footer": "--------------------------------------------------------------------------------------------------------------",
+    "Footer - Heycar - Page d'accueil": "//a[@href='https://heycar.fr/voiture-occasion/audi'][contains(.,'Heycar')]"
 }
 
