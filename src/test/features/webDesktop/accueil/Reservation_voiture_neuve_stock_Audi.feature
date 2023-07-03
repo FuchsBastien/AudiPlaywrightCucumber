@@ -5,7 +5,8 @@
     And Je clique sur "Page - Cookies - Page d'accueil"
 
     Scenario: Reservation_voiture_neuve_stock_Audi
-    When Je clique sur "Page - Bouton Choix Modèles Véhicules Disponibles - Page d'accueil"
+    When Je vérifie que "Footer - Lien Garanties Audi - Page d'accueil" affiche le texte "Garanties Audi"
+    And Je clique sur "Page - Bouton Choix Modèles Véhicules Disponibles - Page d'accueil"
     And Je clique sur "Page - Bouton Choix Modèle <modèle> Disponible - Page d'accueil"
     And Je clique sur "Page - Lien <modèle> Neufs Disponibles - Page d'accueil"
     #And J'attend et je clique sur "Page - Checkbox Stock Audi France - Page recherche Vehicules"
