@@ -1,12 +1,10 @@
-
-
 {
     "default": {
         "formatOptions": {
             "snippetInterface": "async-await"
         },
         "paths": [
-            "src/test/features/webDesktop/accueil/Reserver_sur_Heycar.feature"
+            "src/test/features/webDesktop/accueil/Reservation_voiture_neuve_stock_Audi.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,
@@ -15,10 +13,8 @@
         ],  
 
         "format": [
-            "html:cucumber-report.html"
-        ],  
-        
-        "timeout": 60000
+            "progress-bar",
+            "html:./playwright-report/cucumber-report.html"
+        ]
     }  
-
 }

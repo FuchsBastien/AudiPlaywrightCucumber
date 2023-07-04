@@ -1,5 +1,4 @@
 const GetLocateur  = require('../../mapping/fonctions/locateurs');
-const ScreenshotErreur  = require('../navigation/screenshotErreur');
 const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 module.exports = async function verifierTexteElement(page, locateur, texteAffiche) {
@@ -14,8 +13,6 @@ module.exports = async function verifierTexteElement(page, locateur, texteAffich
     console.log(texteElement);
 
     if (texteElement.includes(texteAffiche) == false) {
-        let actionImpossible = "texteNonVisible"
-        ScreenshotErreur(page, actionImpossible);
         throw Error("Le texte '" + texteElement + "' affiche ne correspond pas à l'attendu '" + texteAffiche + "' \n");
     }
 }

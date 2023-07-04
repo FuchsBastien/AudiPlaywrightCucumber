@@ -1,5 +1,5 @@
-const { Given, When, Then, And, After } = require('@cucumber/cucumber');
-const Connexion = require('../../support/commun/action/connexion');
+const {Before, After, Given, When, Then, And} = require('@cucumber/cucumber');
+const Connexion = require('../../support/commun/navigation/connexion');
 const CliquerSur = require('../../support/commun/action/cliquerSur');
 const SaisirTexte = require('../../support/commun/action/saisirTexte');
 const TaperTouche = require('../../support/commun/action/taperTouche');
@@ -8,21 +8,29 @@ const CliquerSurEtAttendre = require('../../support/commun/action/cliquerSurEtAt
 
 const SwitchToIframe = require('../../support/commun/action/switchToIframe');
 const ClickButtonInsideIframe = require('../../support/commun/action/clickButtonInsideIframe');
-//const { chromium, test, Browser } = require('@playwright/test');
 const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
 const VerifierTexteElement = require('../../support/commun/verification/verifierTexteElement');
 
-let browser;
 let page;
 
+
+After(async function (scenario) {
+    //screenshot
+    if (scenario.result.status === 'FAILED') {
+    const screenshotPath = `./playwright-report/${scenario.pickle.name}/screenshots/image.jpg`
+    const img = await page.screenshot({ path: screenshotPath });
+    await this.attach(img, 'image/png');
+    }
+    //fermeture navigateur et page
+    await page.close();
+    await browser.close()   
+});
+
 Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
-    /*browser = await chromium.launch({headless: false, slowMo: 400});
-    page = await browser.newPage();
-    await page.goto('https://www.zalando.fr/accueil-homme/');*/
     page = await Connexion(url)
 });
 
-Given(/^Je clique sur "(.*)"$/, {timeout: 25000}, async (locateur) =>  {
+Given(/^Je clique sur "(.*)"$/, {timeout: 25000}, async (locateur, ) =>  {
     await CliquerSur(page, locateur)
 });
 
@@ -55,11 +63,6 @@ Given( /^Je clique sur bouton Iframe "(.*)"$/, {timeout: 25000}, async (buttonLo
     //await CliquerSurIframe(page, locateur)
     await ClickButtonInsideIframe(this.iframe, buttonLocator);
 });
-
-/*Given("Je souhaite créer un dossier avec le nom du scénario" , function () {
-    const scenarioName = this.pickle;
-    console.log('Nom du scénario:', scenarioName);
-});*/
 
 Given( /^Je vérifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
     await VerifierTexteElement(page, locateur, texteAffiche);

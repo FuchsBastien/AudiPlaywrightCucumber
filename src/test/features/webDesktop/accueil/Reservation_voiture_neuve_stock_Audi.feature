@@ -12,7 +12,7 @@
     And J'attend et je clique sur "Page - Premier Résultat Stock - Page recherche Vehicules"
     And Je clique sur "Page - Bouton Contacter le partenaire - Page recherche Vehicules"
     And Je vais sur l'onglet "1"
-    And Je vérifie que "Page - Titre Identifiez vous - Page formulaire" affiche le texte "Garanties Audo"
+    And Je vérifie que "Page - Titre Identifiez vous - Page formulaire" affiche le texte "Identifiez-vous"
     And Je clique sur "Page - Champ Mail - Page formulaire"
     And Je saisis "bastien.fuchs@outlook.fr" dans le champ "Page - Champ Mail - Page formulaire"
     And Je clique sur "Page - Bouton Valider - Page formulaire"

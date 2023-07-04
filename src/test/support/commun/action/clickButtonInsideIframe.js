@@ -1,6 +1,5 @@
 const SwitchToIframe = require('../action/switchToIframe')
 const GetLocateur  = require('../../mapping/fonctions/locateurs');
-const ScreenshotErreur  = require('../navigation/screenshotErreur');
 const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 
@@ -30,8 +29,6 @@ module.exports = async function clickButtonInsideIframe(locateur, iframe) {
         //await perdreFocus()
 
     } catch (error) {
-        let actionImpossible = "impossibleDeCliquer"
-        ScreenshotErreur(actionImpossible);
         throw Error(error);
         
         //await perdreFocus()

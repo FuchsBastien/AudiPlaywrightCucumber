@@ -1,5 +1,4 @@
 const GetLocateur  = require('../../mapping/fonctions/locateurs');
-const ScreenshotErreur  = require('../navigation/screenshotErreur');
 const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 /**
