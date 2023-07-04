@@ -1,5 +1,4 @@
 const GetLocateur  = require('../../mapping/fonctions/locateurs');
-const ScreenshotErreur  = require('../navigation/screenshotErreur');
 const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 
@@ -24,8 +23,6 @@ module.exports = async function cliquerSurEtAttendre(page, locateur) {
         //}
 
     } catch(error) {
-        let actionImpossible = "impossibleDeCliquer"
-        ScreenshotErreur(page, actionImpossible);
         throw Error(error);
     }
 

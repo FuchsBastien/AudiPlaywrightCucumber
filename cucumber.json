@@ -1,5 +1,3 @@
-
-
 {
     "default": {
         "formatOptions": {
@@ -15,10 +13,8 @@
         ],  
 
         "format": [
-            "html:cucumber-report.html"
-        ],  
-        
-        "timeout": 60000
+            "progress-bar",
+            "html:./playwright-report/cucumber-report.html"
+        ]
     }  
-
 }
