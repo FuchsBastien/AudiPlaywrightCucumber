@@ -37,8 +37,6 @@ module.exports = function getLocateur(alias) {
     } else {
         return String(locateur)
     }
-    return "#uc-btn-accept-banner"
-    
   }
 
 

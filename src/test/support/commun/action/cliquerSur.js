@@ -1,16 +1,12 @@
 const GetLocateur  = require('../../mapping/fonctions/locateurs');
-const ScreenshotErreur  = require('../navigation/screenshotErreur');
 const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 
 module.exports = async function cliquerSur(page, locateur) {
     console.log("fonction cliquerSur");
-    //let cookie = await page.locator("#uc-btn-accept-banner");
-    //await cookie.click();
- 
+  
     try {
         const aliasLocateur = String(locateur);
-        //console.log(aliasLocateur);
         locateur          = GetLocateur(aliasLocateur);
         const element       = await page.locator(locateur);
 
@@ -20,11 +16,8 @@ module.exports = async function cliquerSur(page, locateur) {
         //}
 
     } catch(error) {
-        let actionImpossible = "impossibleDeCliquer"
-        ScreenshotErreur(page, actionImpossible);
         throw Error(error);
     }
-
 }
 
 
