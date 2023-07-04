@@ -6,12 +6,17 @@
 
     Scenario: Reservation_voiture_neuve_stock_Audi
     When Je clique sur "Page - Bouton Choix Modèles Véhicules Disponibles - Page d'accueil"
+    And Je verifier que l'element "Page - Bouton Découvrir" est affiche
     And Je clique sur "Page - Bouton Choix Modèle <modèle> Disponible - Page d'accueil"
     And Je clique sur "Page - Lien <modèle> Neufs Disponibles - Page d'accueil"
     #And J'attend et je clique sur "Page - Checkbox Stock Audi France - Page recherche Vehicules"
     And J'attend et je clique sur "Page - Premier Résultat Stock - Page recherche Vehicules"
+    #And Je verifier que l'element "Page - Bouton Découvrir" est affiche
     And Je clique sur "Page - Bouton Contacter le partenaire - Page recherche Vehicules"
     And Je vais sur l'onglet "1"
+
+    #And Je verifier que l'element "Page - Bouton Découvrir" est affiche
+    And Je verifier que le texte "Page - Titre Identifiez vous - Page formulaire" est de couleur "rgb(1, 0, 0)"
     And Je vérifie que "Page - Titre Identifiez vous - Page formulaire" affiche le texte "Identifiez-vous"
     And Je clique sur "Page - Champ Mail - Page formulaire"
     And Je saisis "bastien.fuchs@outlook.fr" dans le champ "Page - Champ Mail - Page formulaire"

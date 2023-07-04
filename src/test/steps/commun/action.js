@@ -59,7 +59,7 @@ Given(/^Je bascule vers la fenetre "(.*)"$/, {timeout: 25000}, async (iframeLoca
     this.iframe = await SwitchToIframe(this.page, iframeLocator);
 });
 
-Given( /^Je clique sur bouton Iframe "(.*)"$/, {timeout: 25000}, async (buttonLocator) =>  {
+Given(/^Je clique sur bouton Iframe "(.*)"$/, {timeout: 25000}, async (buttonLocator) =>  {
     //await CliquerSurIframe(page, locateur)
     await ClickButtonInsideIframe(this.iframe, buttonLocator);
 });
@@ -68,3 +68,19 @@ Given( /^Je vérifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, asy
     await VerifierTexteElement(page, locateur, texteAffiche);
 });
 
+
+
+
+
+
+
+const VerifierElementVisible = require('../../support/commun/verification/verifierElementVisible');
+const VerifierCouleurTexte = require('../../support/commun/verification/verifierCouleurTexte');
+
+Given(/^Je verifier que l'element "(.*)" est affiche$/, {timeout: 25000}, async (locateur) => {
+    await VerifierElementVisible(page, locateur);
+});
+
+Given(/^Je verifier que le texte "(.*)" est de couleur "(.*)"$/, {timeout: 25000}, async (locateur, couleur) => {
+    await VerifierCouleurTexte(page, locateur, couleur);
+});
