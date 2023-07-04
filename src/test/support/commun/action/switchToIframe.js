@@ -11,7 +11,8 @@ module.exports = async function switchToIframe(locateur) {
 
     //Recuperation du locateur reel si alias donne
     const aliasLocateur = String(locateur);
-    locateur = GetLocateur(aliasLocateur)
+    locateur = GetLocateur(aliasLocateur);
+    console.log(locateur);
 
     //await browser.pause(1500)
 

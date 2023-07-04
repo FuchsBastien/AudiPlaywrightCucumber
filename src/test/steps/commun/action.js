@@ -5,11 +5,13 @@ const SaisirTexte = require('../../support/commun/action/saisirTexte');
 const TaperTouche = require('../../support/commun/action/taperTouche');
 const Cocher = require('../../support/commun/action/cocher');
 const CliquerSurEtAttendre = require('../../support/commun/action/cliquerSurEtAttendre');
+const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
+const VerifierTexteElement = require('../../support/commun/verification/verifierTexteElement');
+const VerifierElementVisible = require('../../support/commun/verification/verifierElementVisible');
+const VerifierCouleurTexte = require('../../support/commun/verification/verifierCouleurTexte');
 
 const SwitchToIframe = require('../../support/commun/action/switchToIframe');
 const ClickButtonInsideIframe = require('../../support/commun/action/clickButtonInsideIframe');
-const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
-const VerifierTexteElement = require('../../support/commun/verification/verifierTexteElement');
 
 let page;
 
@@ -67,15 +69,6 @@ Given(/^Je clique sur bouton Iframe "(.*)"$/, {timeout: 25000}, async (buttonLoc
 Given( /^Je vérifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
     await VerifierTexteElement(page, locateur, texteAffiche);
 });
-
-
-
-
-
-
-
-const VerifierElementVisible = require('../../support/commun/verification/verifierElementVisible');
-const VerifierCouleurTexte = require('../../support/commun/verification/verifierCouleurTexte');
 
 Given(/^Je verifier que l'element "(.*)" est affiche$/, {timeout: 25000}, async (locateur) => {
     await VerifierElementVisible(page, locateur);

@@ -9,7 +9,7 @@ module.exports = async function changerOnglet(page, numOnglet) {
     let pages = await context.pages();
     //console.log(pages);
     //const nouvellePage = pages[1];
-    page = pages[1];
+    page = pages[numOnglet];
     return page;
     //let barre = await nouvellePage.locator("//input[contains(@id,'info_ctc_email')]");
     //let barre = await nouvellePage.locator("//button[@class='button']");
