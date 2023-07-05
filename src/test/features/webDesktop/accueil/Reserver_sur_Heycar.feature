@@ -14,6 +14,9 @@ Feature: Je veux reserver une Audi d'occasion sur Heycar en partant de la page d
         Then Je clique sur "Page - Île-de-France - Page reserver sur Heycar"
         And Je saisis "80000" dans le champ "Page - Kilométrage Min - Page reserver sur Heycar" 
         And Je clique sur "Page - Couleur du véhicule Noir - Page reserver sur Heycar"
+        And Je verifier que l'element "Page - Filtre Île-de-France - Page reserver sur Heycar" est affiche
+        And Je verifier que l'element "Page - Filtre Kilométrage - Page reserver sur Heycar" est affiche
+        And Je verifier que l'element "Page - Filtre Couleur du véhicule - Page reserver sur Heycar" est affiche
         When J'attend et je clique sur "Page - Réserver Audi A3Sportback 1.6 TDI 110ch FAP Business line S tronic 7 - Page reserver sur Heycar"
         #Vos coordonnées
         And J'attend et je clique sur "Page - Sexe M - Page reserver sur Heycar"
@@ -43,4 +46,4 @@ Feature: Je veux reserver une Audi d'occasion sur Heycar en partant de la page d
         And Je saisis "123" dans le champ "Page -  Cryptogramme visuel - Page reserver sur Heycar"
         And Je clique sur "Page -  Enregistrer cette carte (Non) - Page reserver sur Heycar"
         Then Je clique sur "Page -  Valider - Page reserver sur Heycar"
-        Then Je vérifie que "Page -  Numéro de carte non valide - Page reserver sur Heycar" affiche le texte "Numéro de carte non valido"
+        Then Je vérifie que "Page -  Numéro de carte non valide - Page reserver sur Heycar" affiche le texte "Numéro de carte non valide"
