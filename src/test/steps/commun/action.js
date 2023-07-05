@@ -9,9 +9,9 @@ const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
 const VerifierTexteElement = require('../../support/commun/verification/verifierTexteElement');
 const VerifierElementVisible = require('../../support/commun/verification/verifierElementVisible');
 const VerifierCouleurTexte = require('../../support/commun/verification/verifierCouleurTexte');
-
-const SwitchToIframe = require('../../support/commun/action/switchToIframe');
-const ClickButtonInsideIframe = require('../../support/commun/action/clickButtonInsideIframe');
+const AccederIframe = require('../../support/commun/action/accederIframe');
+const CliquerSurIframe = require('../../support/commun/action/cliquerSurIframe');
+const SaisirTexteIframe = require('../../support/commun/action/saisirTexteIframe');
 
 let page;
 
@@ -56,14 +56,16 @@ Given(/^Je vais sur l'onglet "(.*)"$/, {timeout: 25000}, async (numOnglet) =>  {
     page = await ChangerOnglet(page, numOnglet)
 });
 
-Given(/^Je bascule vers la fenetre "(.*)"$/, {timeout: 25000}, async (iframeLocator) =>  {
-    //page = await Navigation(page)
-    this.iframe = await SwitchToIframe(this.page, iframeLocator);
+Given(/^Je bascule vers l'iframe "(.*)"$/, {timeout: 25000}, async (iframeLocator) =>  {
+    iframe = await AccederIframe(page, iframeLocator);
 });
 
-Given(/^Je clique sur bouton Iframe "(.*)"$/, {timeout: 25000}, async (buttonLocator) =>  {
-    //await CliquerSurIframe(page, locateur)
-    await ClickButtonInsideIframe(this.iframe, buttonLocator);
+Given(/^Je clique sur "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur) =>  {
+    await CliquerSurIframe(iframe, locateur);
+});
+
+Given(/^Je saisis "(.*)" dans le champ "(.*)" dans l'iframe$/, {timeout: 25000}, async (texteASaisir,locateur) =>  {
+    await SaisirTexteIframe(iframe, texteASaisir,locateur);
 });
 
 Given( /^Je vérifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
