@@ -6,11 +6,11 @@
     
     "Page": "---------------------------------------------------------------------------------------------------------------",
     "Page - Etre rappele par un conseiller - Espace Rappele": "//img[@src='https://chatbot-api-media.meetdeal.video/static/dock-audi/icon/calendar-events-small.svg']",
-    "Page - Ifram A la date de mon choix - Espace Rappele": "//iframe[@class='iframe']",
-    "Page - A la date de mon choix - Espace Rappele": "(//span[@class='aui-radio__box'])[2]",
+    "Page - Ifram A la date de mon choix - Espace Rappele": ".iframe",
+    "Page - A la date de mon choix - Espace Rappele": "//label[contains(.,'Immédiatement')]",
     "Page - Date - Espace Rappele": "//input[contains(@id,'date')][@name='date']",
+    "Page - Champ téléphone - Espace Rappele": "//input[contains(@class,'aui-textfield__input voxFormElement')]",
     "Page - Definir date - Espace Rappele": "(//div[contains(.,'30')])[10]",
     
-
     "Footer": "--------------------------------------------------------------------------------------------------------------"
 }

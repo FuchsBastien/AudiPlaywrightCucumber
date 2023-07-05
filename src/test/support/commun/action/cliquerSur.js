@@ -9,6 +9,7 @@ module.exports = async function cliquerSur(page, locateur) {
         const aliasLocateur = String(locateur);
         locateur          = GetLocateur(aliasLocateur);
         const element       = await page.locator(locateur);
+        console.log(element);
 
         //if (await element.isVisible()) {
             //AttendreSecondes(page, 1);
