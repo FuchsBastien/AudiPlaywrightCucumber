@@ -10,7 +10,7 @@ Feature: Etre_rappele
         Then Je clique sur "Header - Pour les professionnels - Page d'accueil"
         When Je clique sur "Header - Lien Etre rappele - Espace Rappele"
         Then Je bascule vers l'iframe "Page - Ifram A la date de mon choix - Espace Rappele"
-        And Je clique sur "Page - A la date de mon choix - Espace Rappele" dans l'iframe
+        And Je clique sur "Page - Immédiatement - Espace Rappele" dans l'iframe
         And Je clique sur "Page - Champ téléphone - Espace Rappele" dans l'iframe
         And Je saisis "06 02 00 00 00" dans le champ "Page - Champ téléphone - Espace Rappele" dans l'iframe
       
