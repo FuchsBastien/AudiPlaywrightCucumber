@@ -1,0 +1,42 @@
+{
+    "PAGE": "Espace voiture Haut de Gamme",
+    
+    "Header": "---------------------------------------------------------------------------------------------------------------",
+    
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Page - Réinitialiser tous les filtres - Espace voiture Haut de Gamme": "(//span[contains(@class,'sc-filter-options-icon-wrap')])[4]",
+    "Page - Equipement - Espace voiture Haut de Gamme": "(//span[contains(.,'Équipements')])[2]",
+    "Page - Haut de gamme: Avus Extended - Espace voiture Haut de Gamme": "(//label[contains(@class,'sc-filter-item-label audi-checkbox-label audi-copy-m sc-hyphenate')])[11]",
+    "Page - Filtre Avus Extended - Espace voiture Haut de Gamme": "(//span[contains(.,'Avus Extended')])[1]",
+    "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme": "(//h3[@class='audi-headline-order-3'])[1]",
+    "Page - Réservé votre Audi - Espace voiture Haut de Gamme": "(//span[contains(.,'Réserver votre Audi')])[1]",
+    "Page - Refus cookies - Espace voiture Haut de Gamme": "#ensModalWrapper > div > div.ensButtons > button.ens-reject-all.button",
+    "Page - Titre Formulaire (Contact) - Espace voiture Haut de Gamme": "//h3[contains(@class,'title')]",
+    "Page - Prenom - Espace voiture Haut de Gamme": "//input[contains(@name,'firstName')]",
+    "Page - Nom - Espace voiture Haut de Gamme": "//input[@name='lastName']",
+    "Page - Adresse email - Espace voiture Haut de Gamme": "//input[@name='email']",
+    "Page - Numero de telephone mobile - Espace voiture Haut de Gamme": "//input[@name='phone']",
+    "Page - Suivant adresse - Espace voiture Haut de Gamme": "//div[contains(@class,'click-panel')]",
+    "Page - Titre Formulaire (Adresse) - Espace voiture Haut de Gamme": "//h3[contains(.,'Adresse')]",
+    "Page - Numero de la rue et rue - Espace voiture Haut de Gamme": "//input[@name='streetNumber']",
+    "Page - Ville - Espace voiture Haut de Gamme": "//input[@name='city']",
+    "Page - Code postale - Espace voiture Haut de Gamme": "//input[@name='postCode']",
+    "Page - Suivant Services additionnels - Espace voiture Haut de Gamme": "//div[contains(@class,'click-panel')]",
+    "Page - Titre Formulaire (Services additionnels) - Espace voiture Haut de Gamme": "//h3[contains(.,'Services additionnels')]",
+    "Page - Livraison à domicile - Espace voiture Haut de Gamme": "(//span[contains(@class,'label-tick')])[2]",
+    "Page - Suivant Commande - Espace voiture Haut de Gamme": "//div[contains(@class,'click-panel')]",
+    "Page - Titre Formulaire (Commande) - Espace voiture Haut de Gamme":"//strong[contains(.,'Commande')]",
+    "Page - Je confirme avoir lu et accepté les Conditions Générales de Réservation - Espace voiture Haut de Gamme": "//span[contains(@class,'label-tick')]",
+    "Page - Proceder au paiement - Espace voiture Haut de Gamme": "(//div[contains(@class,'click-panel')])[2]",
+    "Page - Titre Formulaire (Paiement) - Espace voiture Haut de Gamme": "//h2[contains(.,'Paiement')]",
+    "Page - Iframe Card Number - Espace voiture Haut de Gamme": "//iframe[@name='card.number']",
+    "Page - Card Number - Espace voiture Haut de Gamme": "//input[@name='card.number']",
+    "Page - Expiry Date - Espace voiture Haut de Gamme": "//input[@aria-label='Expiry Date']",
+    "Page - Card holder - Espace voiture Haut de Gamme": "//input[@aria-label='Card holder']",
+    "Page - CVV - Espace voiture Haut de Gamme": "//input[@aria-label='CVV']",
+    "Page - Demande de reservation avec empreinte bancaire - Espace voiture Haut de Gamme": "//button[@aria-label='Pay now']",
+    "Page - Iframe CVV - Espace voiture Haut de Gamme": "//iframe[@name='card.cvv']",
+    
+
+    "Footer": "--------------------------------------------------------------------------------------------------------------"
+}

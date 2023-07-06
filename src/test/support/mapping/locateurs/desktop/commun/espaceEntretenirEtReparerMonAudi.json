@@ -1,0 +1,17 @@
+{
+    "PAGE": "Espace Entretenir Mon Audi",
+    
+    "Header": "---------------------------------------------------------------------------------------------------------------",
+    
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Page - Contrat entretient - Espace Entretenir Mon Audi": "//img[contains(@alt,'contrat-entretien-19.jpg')]",
+    "Page - Souscrire un contrat d’entretien pour mon Audi - Espace Entretenir Mon Audi": "//span[contains(.,'Souscrire un contrat d’entretien pour mon Audi')]",
+    "Page - Souscrire - Espace Entretenir Mon Audi": "(//span[contains(.,'Souscrire')])[1]",
+    "Page - Cookies - Espace Entretenir Mon Audi": "//span[contains(.,'Refuser les cookies et continuer')]",
+    "Page - Immatriculation - Espace Entretenir Mon Audi": "//input[@placeholder='AB-123-CD']",
+    "Page - Kilometrage actuel - Espace Entretenir Mon Audi": "//input[@placeholder='Kilométrage actuel']",
+    "Page - Trouver votre vehicule - Espace Entretenir Mon Audi": "//span[contains(.,'Trouver votre véhicule')]",
+    "Page - Message erreur - Espace Entretenir Mon Audi": "//span[contains(@class,'c-error-message')]",
+
+    "Footer": "--------------------------------------------------------------------------------------------------------------"
+}

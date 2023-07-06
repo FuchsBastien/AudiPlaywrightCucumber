@@ -11,6 +11,7 @@
     "Page - Date - Espace Rappele": "//input[contains(@id,'date')][@name='date']",
     "Page - Champ téléphone - Espace Rappele": "//input[contains(@class,'aui-textfield__input voxFormElement')]",
     "Page - Definir date - Espace Rappele": "(//div[contains(.,'30')])[10]",
+    "Page - Etre Rappele(e) - Espace Rappele": "//*[@id='voxSubmitDisplayed']",
     
     "Footer": "--------------------------------------------------------------------------------------------------------------"
 }
