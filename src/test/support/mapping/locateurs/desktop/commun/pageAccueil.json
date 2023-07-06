@@ -8,6 +8,8 @@
     "Header - Pour les professionnels - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/fleet/modeles-business.html']",
     "Header - Champ recherche - Page d'accueil": "//input[@id='search__basic']",
     "Header - Logo Recherche - Page d'accueil": "//button[contains(@aria-label,'Rechercher')]",
+    "Header - Lien Achat et Location - Page d'accueil": "(//span[contains(.,'Achat et location')])[1]",
+    "Header - Lien Audi rent : location courte duree - Page d'accueil": "//a[@aria-label='Audi rent : location courte durée']",
     "Header - Lien Votre Audi - Page d'accueil": "(//span[contains(.,'Votre Audi')])[1]",
     "Header - Lien Entretenir et réparer mon Audi - Page d'accueil": "//a[@aria-label='Entretenir et réparer mon Audi']",
     "Header - Lien Espace Personnel myAudi - Page d'accueil": "//a[@aria-label='Espace personnel myAudi']",
@@ -25,7 +27,6 @@
     "Page - Véhicules neufs - Page d'accueil": "(//span[contains(@class,'text')])[72]",
 
     "Footer": "--------------------------------------------------------------------------------------------------------------",
-
     "Footer - Lien Garanties Audi - Page d'accueil": "(//a[text()='Garanties Audi'])[2]",
     "Footer - Heycar - Page d'accueil": "//a[@href='https://heycar.fr/voiture-occasion/audi'][contains(.,'Heycar')]"
 }

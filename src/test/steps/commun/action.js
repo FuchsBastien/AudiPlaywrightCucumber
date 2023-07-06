@@ -12,6 +12,9 @@ const VerifierCouleurTexte = require('../../support/commun/verification/verifier
 const AccederIframe = require('../../support/commun/action/accederIframe');
 const CliquerSurIframe = require('../../support/commun/action/cliquerSurIframe');
 const SaisirTexteIframe = require('../../support/commun/action/saisirTexteIframe');
+const AttendreSecondes = require('../../support/commun/navigation/attendreSecondes');
+const VerifierTexteElementIframe = require('../../support/commun/verification/verifierTexteElementIframe');
+const CliquerSurSelecteurIframe = require('../../support/commun/action/cliquerSurSelecteurIframe');
 
 let page;
 
@@ -79,3 +82,17 @@ Given(/^Je verifier que l'element "(.*)" est affiche$/, {timeout: 25000}, async 
 Given(/^Je verifier que le texte "(.*)" est de couleur "(.*)"$/, {timeout: 25000}, async (locateur, couleur) => {
     await VerifierCouleurTexte(page, locateur, couleur);
 });
+
+Given(/^J'attend "(.*)" secondes$/, {timeout: 25000}, async (secondesAAttendre) => {
+    await AttendreSecondes(page, secondesAAttendre)
+});
+
+Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans l'iframe$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
+    await CliquerSurSelecteurIframe(iframe, choixSelecteur, locateurSelecteur);
+});
+
+Given( /^Je verifie que "(.*)" affiche le texte "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
+    await VerifierTexteElementIframe(iframe, locateur, texteAffiche);
+});
+
+
