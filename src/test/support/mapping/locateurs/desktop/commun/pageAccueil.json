@@ -8,6 +8,8 @@
     "Header - Pour les professionnels - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/fleet/modeles-business.html']",
     "Header - Champ recherche - Page d'accueil": "//input[@id='search__basic']",
     "Header - Logo Recherche - Page d'accueil": "//button[contains(@aria-label,'Rechercher')]",
+    "Header - Lien Achat et Location - Page d'accueil": "(//span[contains(.,'Achat et location')])[1]",
+    "Header - Lien Audi rent : location courte duree - Page d'accueil": "//a[@aria-label='Audi rent : location courte durée']",
     "Header - Lien Votre Audi - Page d'accueil": "(//span[contains(.,'Votre Audi')])[1]",
     "Header - Lien Espace Personnel myAudi - Page d'accueil": "//a[@aria-label='Espace personnel myAudi']",
     "Header - Lien offre choisi dans recherche - Page d'accueil": "(//span[contains(.,'Audi Q3 Sportback')])[2]",
@@ -23,7 +25,6 @@
     "Page - Lien A3 sportback Neufs Disponibles - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/nouvelles-voitures/results.html#filter=carline.a3sb']",
 
     "Footer": "--------------------------------------------------------------------------------------------------------------",
-
     "Footer - Lien Garanties Audi - Page d'accueil": "(//a[text()='Garanties Audi'])[2]",
     "Footer - Heycar - Page d'accueil": "//a[@href='https://heycar.fr/voiture-occasion/audi'][contains(.,'Heycar')]"
 }

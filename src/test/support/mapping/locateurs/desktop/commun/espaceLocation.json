@@ -1,0 +1,47 @@
+{
+    "PAGE": "Espace Location",
+    
+    "Header": "---------------------------------------------------------------------------------------------------------------",
+    "Header - Titre actif Date Reservation - Location" :"//li [@class ='etap1 active']",
+    "Header - Titre actif Choix Vehicule - Location" :"//li [@class ='etap2 active']",
+    "Header - Titre actif Recapitulatif - Location" :"//li [@class ='etap3 active']",
+    "Header - Titre actif Conducteur - Location" :"//li [@class ='etap4 active']",
+    "Header - Titre actif Paiement - Location" :"//li [@class ='etap5 active']",
+    
+
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Page - Bouton Louer une Audi - Location" : "(//span[contains(.,'Louer une Audi')])[1]",
+    "Page - Iframe Louer une Audi - Location": "//iframe[@src='https://audirent-fr.com/']",
+    "Page - Champ ville depart - Location": "//*[text()='Ville de départ']",
+    "Page - premier resultat ville depart - Location" :"//ul[contains(@class, 'listCties')]/li[2]",
+    "Page - premier resultat agence ville depart - Location" :"(//li[contains(@class,'itemAgency')])[1]",
+    "Page - label date depart - Location" :"//*[text()='Départ']",
+    "Page - label choix date depart - Location" :"//a[contains(.,'19')]",
+    "Page - label date retour - Location" :"//label[@for='txtDateEnd']",
+    "Page - label choix date retour - Location" :"//a[contains(.,'26')]",
+    "Page - bouton chercher- Location" :"//button[contains(.,'Chercher')]",
+    "Page - premier bouton reserver- Location" :"(//div[contains(@class, 'cmdVehic')]//div[contains(@class, 'submit')]//button[contains(., 'Réserver')])[1]",
+    "Page - recapitulatif Titre nom agence - Location" :"//h2[@class='titre agencyName']",
+    "Page - bouton effectuer le paiement - Location" :"//div[@class='goupeBtnReservation']",
+    "Page - selection civilite - Location" :"//select[@id='civ']",
+    "Page - champ nom - Location" :"//input[@id='txtNom']",
+    "Page - champ prenom - Location" :"//input[@id='txtPrenom']",
+    "Page - champ email - Location" :"//input[@id='txtMail']",
+    "Page - champ telephone - Location" :"//input[@id='txtTel']",
+    "Page - selection age - Location" :"//select[@id='txtAge']",
+    "Page - champ adresse - Location" :"//input[@id='txtAdresse']",
+    "Page - champ code postale - Location" :"//input[@id='txtCp']",
+    "Page - champ ville - Location" :"//input[@id='txtVille']",
+    "Page - champ pays - Location" :"//input[@id='txtPays']",
+    "Page - coche condition utilisation - Location" : "//label[@for='chAccepter']",
+    "Page - bouton effectuer le paiement final - Location" : "//button[@id ='btnPaiement']",
+    "Page - champ numero carte bleue - Location" : "//input[@id ='txtNumberCarte']",
+    "Page - selection mois date validite carte bleue - Location" : "//select[@id='txtDateValidationMonth']",
+    "Page - selection annee date validite carte bleue - Location" : "//select[@id='txtDateValidationYear']", 
+    "Page - champ numero cryptogramme - Location" : "//input[@id ='txtcvv']",
+    "Page - bouton valider - Location" : "//button[@id='btnPaiement']",
+    
+
+    "Footer": "--------------------------------------------------------------------------------------------------------------"
+}
+
