@@ -71,7 +71,7 @@ Given(/^Je saisis "(.*)" dans le champ "(.*)" dans l'iframe$/, {timeout: 25000},
     await SaisirTexteIframe(iframe, texteASaisir,locateur);
 });
 
-Given( /^Je vérifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
+Given( /^Je verifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
     await VerifierTexteElement(page, locateur, texteAffiche);
 });
 

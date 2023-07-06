@@ -46,4 +46,5 @@ Feature: Je veux reserver une Audi d'occasion sur Heycar en partant de la page d
         And Je saisis "123" dans le champ "Page -  Cryptogramme visuel - Page reserver sur Heycar"
         And Je clique sur "Page -  Enregistrer cette carte (Non) - Page reserver sur Heycar"
         Then Je clique sur "Page -  Valider - Page reserver sur Heycar"
-        Then Je vérifie que "Page -  Numéro de carte non valide - Page reserver sur Heycar" affiche le texte "Numéro de carte non valide"
+        Then Je verifie que "Page -  Numéro de carte non valide - Page reserver sur Heycar" affiche le texte "Numéro de carte non valide"
+        Then Je verifier que le texte "Page -  Numéro de carte non valide - Page reserver sur Heycar" est de couleur "rgb(204, 0, 0)"

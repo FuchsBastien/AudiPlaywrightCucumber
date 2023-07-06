@@ -13,4 +13,5 @@ Feature: Etre_rappele
         And Je clique sur "Page - Immédiatement - Espace Rappele" dans l'iframe
         And Je clique sur "Page - Champ téléphone - Espace Rappele" dans l'iframe
         And Je saisis "06 02 00 00 00" dans le champ "Page - Champ téléphone - Espace Rappele" dans l'iframe
+        And Je clique sur "Page - Etre Rappele(e) - Espace Rappele" dans l'iframe
       
