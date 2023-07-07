@@ -6,10 +6,10 @@
 
     Scenario: Reservation_voiture_neuve_stock_Audi
     When Je clique sur "Page - Bouton Choix Modèles Véhicules Disponibles - Page d'accueil"
-    And Je verifier que l'element "Page - Bouton Découvrir" est affiche
+    And Je verifie que l'element "Page - Bouton Découvrir" est affiche
     And Je clique sur "Page - Bouton Choix Modèle <modèle> Disponible - Page d'accueil"
     And Je clique sur "Page - Lien <modèle> Neufs Disponibles - Page d'accueil"
-    And Je verifier que le texte "Page - Titre Stock Audi France - Page recherche Vehicules" est de couleur "#4C4C4C"
+    And Je verifie que le texte "Page - Titre Stock Audi France - Page recherche Vehicules" est de couleur "#4C4C4C"
     #And J'attend et je clique sur "Page - Checkbox Stock Audi France - Page recherche Vehicules"
     And J'attend et je clique sur "Page - Premier Résultat Stock - Page recherche Vehicules"
     #And Je verifier que l'element "Page - Bouton Découvrir" est affiche

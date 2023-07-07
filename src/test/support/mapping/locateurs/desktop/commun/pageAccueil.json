@@ -9,6 +9,7 @@
     "Header - Champ recherche - Page d'accueil": "//input[@id='search__basic']",
     "Header - Logo Recherche - Page d'accueil": "//button[contains(@aria-label,'Rechercher')]",
     "Header - Lien Achat et Location - Page d'accueil": "(//span[contains(.,'Achat et location')])[1]",
+    "Header - Lien Offres du moment - Page d'accueil": "//a[contains(@aria-label,'Offres du moment')]",
     "Header - Lien Audi rent : location courte duree - Page d'accueil": "//a[@aria-label='Audi rent : location courte durée']",
     "Header - Lien Votre Audi - Page d'accueil": "(//span[contains(.,'Votre Audi')])[1]",
     "Header - Lien Entretenir et réparer mon Audi - Page d'accueil": "//a[@aria-label='Entretenir et réparer mon Audi']",
