@@ -41,6 +41,15 @@ chemin des rapports de test
 $ npm run test
 ```
 
+## Générateur d'actions en code playwright 
+
+2. Exéxuter la commande dans le terminal
+
+```nodejs
+$ npx playwright codegen https://www.audi.fr/
+```
+
+
 ## Génération du rapport d'exécution
 
 Pour chaque feature exécutée, un fichier .html est généré automatiquement, contenant toutes les informations utiles telles que le résultat, le temps d'exécution, le screenshot de l'erreur etc.
