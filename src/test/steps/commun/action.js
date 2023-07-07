@@ -15,6 +15,7 @@ const SaisirTexteIframe = require('../../support/commun/action/saisirTexteIframe
 const AttendreSecondes = require('../../support/commun/navigation/attendreSecondes');
 const VerifierTexteElementIframe = require('../../support/commun/verification/verifierTexteElementIframe');
 const CliquerSurSelecteurIframe = require('../../support/commun/action/cliquerSurSelecteurIframe');
+const SelectionnerCurseur = require('../../support/commun/action/selectionnerCurseur');
 
 let page;
 
@@ -26,8 +27,6 @@ Before({timeout: 25000}, async function () {
     await CliquerSur(page, cookies)  
 })
 
-
-
 After(async function (scenario) {
     //screenshot si erreur
     if (scenario.result.status === 'FAILED') {
@@ -36,10 +35,9 @@ After(async function (scenario) {
     await this.attach(img, 'image/png');
     }
     //fermeture navigateur et page
-    await page.close();
-    await browser.close()   
+    //await page.close();
+    //await browser.close()   
 });
-
 
 
 Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
@@ -105,5 +103,11 @@ Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans l'iframe$/, {time
 Given( /^Je verifie que "(.*)" affiche le texte "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
     await VerifierTexteElementIframe(iframe, locateur, texteAffiche);
 });
+
+Given( /^Je selectionne "(.*)" dans le curseur "(.*)"$/, {timeout: 25000}, async (nombre, locateur) =>  {  
+    await SelectionnerCurseur(page, nombre, locateur);
+});
+
+
 
 
