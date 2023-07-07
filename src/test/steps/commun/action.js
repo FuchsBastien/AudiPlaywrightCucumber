@@ -1,5 +1,5 @@
 const {Before, After, Given, When, Then, And} = require('@cucumber/cucumber');
-const Connexion = require('../../support/commun/navigation/connexion');
+const AccederSite = require('../../support/commun/navigation/accederSite');
 const CliquerSur = require('../../support/commun/action/cliquerSur');
 const SaisirTexte = require('../../support/commun/action/saisirTexte');
 const TaperTouche = require('../../support/commun/action/taperTouche');
@@ -9,7 +9,7 @@ const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
 const VerifierTexteElement = require('../../support/commun/verification/verifierTexteElement');
 const VerifierElementVisible = require('../../support/commun/verification/verifierElementVisible');
 const VerifierCouleurTexte = require('../../support/commun/verification/verifierCouleurTexte');
-const AccederIframe = require('../../support/commun/action/accederIframe');
+const AccederIframe = require('../../support/commun/navigation/accederIframe');
 const CliquerSurIframe = require('../../support/commun/action/cliquerSurIframe');
 const SaisirTexteIframe = require('../../support/commun/action/saisirTexteIframe');
 const AttendreSecondes = require('../../support/commun/navigation/attendreSecondes');
@@ -18,9 +18,18 @@ const CliquerSurSelecteurIframe = require('../../support/commun/action/cliquerSu
 
 let page;
 
+Before({timeout: 25000}, async function () {
+    let url = "https://www.audi.fr/"
+    page = await AccederSite(url)
+
+    let cookies = "Page - Cookies - Page d'accueil"
+    await CliquerSur(page, cookies)  
+})
+
+
 
 After(async function (scenario) {
-    //screenshot
+    //screenshot si erreur
     if (scenario.result.status === 'FAILED') {
     const screenshotPath = `./playwright-report/${scenario.pickle.name}/screenshots/image.jpg`
     const img = await page.screenshot({ path: screenshotPath });
@@ -31,8 +40,10 @@ After(async function (scenario) {
     await browser.close()   
 });
 
+
+
 Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
-    page = await Connexion(url)
+    page = await AccederSite(url)
 });
 
 Given(/^Je clique sur "(.*)"$/, {timeout: 25000}, async (locateur, ) =>  {
@@ -75,11 +86,11 @@ Given( /^Je verifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, asyn
     await VerifierTexteElement(page, locateur, texteAffiche);
 });
 
-Given(/^Je verifier que l'element "(.*)" est affiche$/, {timeout: 25000}, async (locateur) => {
+Given(/^Je verifie que l'element "(.*)" est affiche$/, {timeout: 25000}, async (locateur) => {
     await VerifierElementVisible(page, locateur);
 });
 
-Given(/^Je verifier que le texte "(.*)" est de couleur "(.*)"$/, {timeout: 25000}, async (locateur, couleur) => {
+Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)"$/, {timeout: 25000}, async (locateur, couleur) => {
     await VerifierCouleurTexte(page, locateur, couleur);
 });
 

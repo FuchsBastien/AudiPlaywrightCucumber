@@ -1,8 +1,8 @@
 Feature: Configuration_voiture
 
-    Background: 
-        Given Je suis sur le site "https://www.audi.fr/"
-        And Je clique sur "Page - Cookies - Page d'accueil"
+    #Background: 
+        #Given Je suis sur le site "https://www.audi.fr/"
+        #And Je clique sur "Page - Cookies - Page d'accueil"
 
     Scenario: Configuration_voiture
         When Je clique sur "Page - Bouton Découvrir"

@@ -1,26 +1,27 @@
 Feature: Acheter une voiture avec le critère de recherche 'Haut de gamme'
-    Background: 
-        Given Je suis sur le site "https://www.audi.fr/"
-        And Je clique sur "Page - Cookies - Page d'accueil"
+
+    #Background: 
+        #Given Je suis sur le site "https://www.audi.fr/"
+        #And Je clique sur "Page - Cookies - Page d'accueil"
 
     Scenario: je réserve une Audi Haut de gamme (Audi A6 allroad quattro)
         When Je clique sur "Page - Véhicules neufs - Page d'accueil"
         And J'attend et je clique sur "Page - Réinitialiser tous les filtres - Espace voiture Haut de Gamme"
         And Je clique sur "Page - Equipement - Espace voiture Haut de Gamme"
         And J'attend et je clique sur "Page - Haut de gamme: Avus Extended - Espace voiture Haut de Gamme"
-        And Je verifier que l'element "Page - Filtre Avus Extended - Espace voiture Haut de Gamme" est affiche
+        And Je verifie que l'element "Page - Filtre Avus Extended - Espace voiture Haut de Gamme" est affiche
         Then J'attend et je clique sur "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme"
         And Je verifie que "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme" affiche le texte "Audi A6 allroad quattro"
-        And Je verifier que l'element "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme" est affiche
-        And Je verifier que le texte "Page - Réservé votre Audi - Espace voiture Haut de Gamme" est de couleur "rgb(0, 0, 0)"
+        And Je verifie que l'element "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme" est affiche
+        And Je verifie que le texte "Page - Réservé votre Audi - Espace voiture Haut de Gamme" est de couleur "rgb(0, 0, 0)"
         When Je clique sur "Page - Réservé votre Audi - Espace voiture Haut de Gamme"
         Then Je vais sur l'onglet "1"
 
         #Saisir les informations de Contacte
         When Je clique sur "Page - Refus cookies - Espace voiture Haut de Gamme"
-        And Je verifier que l'element "Page - Titre Formulaire (Contact) - Espace voiture Haut de Gamme" est affiche
+        And Je verifie que l'element "Page - Titre Formulaire (Contact) - Espace voiture Haut de Gamme" est affiche
         And Je verifie que "Page - Titre Formulaire (Contact) - Espace voiture Haut de Gamme" affiche le texte "Contact"
-        And Je verifier que le texte "Page - Titre Formulaire (Contact) - Espace voiture Haut de Gamme" est de couleur "rgb(60, 60, 60)"
+        And Je verifie que le texte "Page - Titre Formulaire (Contact) - Espace voiture Haut de Gamme" est de couleur "rgb(60, 60, 60)"
         And Je saisis "Daniel" dans le champ "Page - Prenom - Espace voiture Haut de Gamme"
         And Je saisis "JACK" dans le champ "Page - Nom - Espace voiture Haut de Gamme"
         And Je saisis "alt.em-bovhbcad@yopmail.com" dans le champ "Page - Adresse email - Espace voiture Haut de Gamme"
@@ -28,25 +29,25 @@ Feature: Acheter une voiture avec le critère de recherche 'Haut de gamme'
         Then Je clique sur "Page - Suivant adresse - Espace voiture Haut de Gamme"
 
         #Saisir les informations d'Adresse
-        And Je verifier que l'element "Page - Titre Formulaire (Adresse) - Espace voiture Haut de Gamme" est affiche
+        And Je verifie que l'element "Page - Titre Formulaire (Adresse) - Espace voiture Haut de Gamme" est affiche
         And Je verifie que "Page - Titre Formulaire (Adresse) - Espace voiture Haut de Gamme" affiche le texte "Adresse"
-        And Je verifier que le texte "Page - Titre Formulaire (Adresse) - Espace voiture Haut de Gamme" est de couleur "rgb(60, 60, 60)"
+        And Je verifie que le texte "Page - Titre Formulaire (Adresse) - Espace voiture Haut de Gamme" est de couleur "rgb(60, 60, 60)"
         When Je saisis "33 rue Sibuet" dans le champ "Page - Numero de la rue et rue - Espace voiture Haut de Gamme"
         And Je saisis "Paris" dans le champ "Page - Ville - Espace voiture Haut de Gamme"
         And Je saisis "75012" dans le champ "Page - Code postale - Espace voiture Haut de Gamme"
         Then Je clique sur "Page - Suivant Services additionnels - Espace voiture Haut de Gamme"
 
         #Saisir les informations de Services additionnels
-        And Je verifier que l'element "Page - Titre Formulaire (Services additionnels) - Espace voiture Haut de Gamme" est affiche
+        And Je verifie que l'element "Page - Titre Formulaire (Services additionnels) - Espace voiture Haut de Gamme" est affiche
         And Je verifie que "Page - Titre Formulaire (Services additionnels) - Espace voiture Haut de Gamme" affiche le texte "Services additionnels"
-        And Je verifier que le texte "Page - Titre Formulaire (Services additionnels) - Espace voiture Haut de Gamme" est de couleur "rgb(60, 60, 60)"
+        And Je verifie que le texte "Page - Titre Formulaire (Services additionnels) - Espace voiture Haut de Gamme" est de couleur "rgb(60, 60, 60)"
         When Je clique sur "Page - Livraison à domicile - Espace voiture Haut de Gamme"
         Then Je clique sur "Page - Suivant Commande - Espace voiture Haut de Gamme"
 
         #Confirmer la Commande
-        And Je verifier que l'element "Page - Titre Formulaire (Commande) - Espace voiture Haut de Gamme" est affiche
+        And Je verifie que l'element "Page - Titre Formulaire (Commande) - Espace voiture Haut de Gamme" est affiche
         And Je verifie que "Page - Titre Formulaire (Commande) - Espace voiture Haut de Gamme" affiche le texte "Commande"
-        And Je verifier que le texte "Page - Titre Formulaire (Commande) - Espace voiture Haut de Gamme" est de couleur "rgb(0, 0, 0)"
+        And Je verifie que le texte "Page - Titre Formulaire (Commande) - Espace voiture Haut de Gamme" est de couleur "rgb(0, 0, 0)"
         When Je clique sur "Page - Je confirme avoir lu et accepté les Conditions Générales de Réservation - Espace voiture Haut de Gamme"
         Then Je clique sur "Page - Proceder au paiement - Espace voiture Haut de Gamme"
 
@@ -57,8 +58,8 @@ Feature: Acheter une voiture avec le critère de recherche 'Haut de gamme'
         And Je saisis "JACK Daniel" dans le champ "Page - Card holder - Espace voiture Haut de Gamme"
         And Je bascule vers l'iframe "Page - Iframe CVV - Espace voiture Haut de Gamme"
         And Je saisis "640" dans le champ "Page - CVV - Espace voiture Haut de Gamme" dans l'iframe
-        And Je verifier que l'element "Page - Titre Formulaire (Paiement) - Espace voiture Haut de Gamme" est affiche
+        And Je verifie que l'element "Page - Titre Formulaire (Paiement) - Espace voiture Haut de Gamme" est affiche
         And Je verifie que "Page - Titre Formulaire (Paiement) - Espace voiture Haut de Gamme" affiche le texte "Paiement"
-        And Je verifier que le texte "Page - Titre Formulaire (Paiement) - Espace voiture Haut de Gamme" est de couleur "rgb(0, 0, 0)"
-        And Je verifier que le texte "Page - Demande de reservation avec empreinte bancaire - Espace voiture Haut de Gamme" est de couleur "rgb(255, 255, 255)"
-        Then Je verifier que l'element "Page - Demande de reservation avec empreinte bancaire - Espace voiture Haut de Gamme" est affiche
+        And Je verifie que le texte "Page - Titre Formulaire (Paiement) - Espace voiture Haut de Gamme" est de couleur "rgb(0, 0, 0)"
+        And Je verifie que le texte "Page - Demande de reservation avec empreinte bancaire - Espace voiture Haut de Gamme" est de couleur "rgb(255, 255, 255)"
+        Then Je verifie que l'element "Page - Demande de reservation avec empreinte bancaire - Espace voiture Haut de Gamme" est affiche
