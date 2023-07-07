@@ -1,5 +1,5 @@
 const GetLocateur  = require('../../mapping/fonctions/locateurs');
-const AttendreSecondes  = require('../navigation/attendreSecondes');
+const AttendreSecondes  = require('./attendreSecondes');
 
 /**
  * Mettre le focus sur un iframe

@@ -1,8 +1,8 @@
 Feature: Louer_voiture
 
- Background: 
-        Given Je suis sur le site "https://www.audi.fr/"
-        And Je clique sur "Page - Cookies - Page d'accueil"
+    #Background: 
+        #Given Je suis sur le site "https://www.audi.fr/"
+        #And Je clique sur "Page - Cookies - Page d'accueil"
 
     Scenario: Louer_voiture
         When Je clique sur "Header - Lien Achat et Location - Page d'accueil"

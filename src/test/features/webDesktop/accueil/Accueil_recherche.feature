@@ -1,8 +1,8 @@
 Feature: Accueil_recherche
 
-  Background: 
-    Given Je suis sur le site "https://www.audi.fr/"
-    And Je clique sur "Page - Cookies - Page d'accueil"
+  #Background: 
+    #Given Je suis sur le site "https://www.audi.fr/"
+    #And Je clique sur "Page - Cookies - Page d'accueil"
     
   Scenario: Accueil_recherche
     And Je clique sur "Header - Logo Recherche - Page d'accueil"

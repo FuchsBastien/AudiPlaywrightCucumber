@@ -1,8 +1,8 @@
 Feature: Reserver_essai
 
-    Background: 
-        Given Je suis sur le site "https://www.audi.fr/"
-        And Je clique sur "Page - Cookies - Page d'accueil"
+    #Background: 
+        #Given Je suis sur le site "https://www.audi.fr/"
+        #And Je clique sur "Page - Cookies - Page d'accueil"
     
     Scenario: Reserver_essai
         When Je clique sur "Header - Menu - Page d'accueil"

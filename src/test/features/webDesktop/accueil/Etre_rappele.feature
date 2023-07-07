@@ -1,8 +1,8 @@
 Feature: Etre_rappele
 
-    Background: 
-        Given Je suis sur le site "https://www.audi.fr/"
-        And Je clique sur "Page - Cookies - Page d'accueil"
+    #Background: 
+        #Given Je suis sur le site "https://www.audi.fr/"
+        #And Je clique sur "Page - Cookies - Page d'accueil"
     
     Scenario: Etre_rappele
         #When Je clique sur "Header - Menu - Page d'accueil"
