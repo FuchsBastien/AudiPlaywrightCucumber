@@ -6,7 +6,7 @@ const GetLocateur = require('../../mapping/fonctions/locateurs');
  * @param  {String} couleur - url a verifier
  */
 
-module.exports = async function VerifierCouleurTexte(page, locateur, couleur) {
+module.exports = async function verifierCouleurTexte(page, locateur, couleur) {
   console.log("fonction verifierCouleurTexte");
 
   //Convertir le hexadecimal en RGB

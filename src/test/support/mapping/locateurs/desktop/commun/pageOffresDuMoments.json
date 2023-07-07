@@ -1,0 +1,25 @@
+{
+    "PAGE": "Page offres du moments",
+    
+    "Header": "---------------------------------------------------------------------------------------------------------------",
+  
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Page - Electriques - Page offres du moments": "//span[contains(.,'Électriques')]",
+    "Page - Audi e-tron GT quattro - Page offres du moments": "//img[@src='/content/dam/nemo/fr/Offres-Audi/Vignettes/1080x1080_e-tron_GT-quattro_V2.png']",
+    "Page - Texte (Audi e-tron GT quattro) - Page offres du moments": "//span[contains(.,'Audi e-tron GT quattro')]",
+    "Page - Fermer Annonce - Page offres du moments": "//div[@class='meetdeal-minimize-button']",
+    "Page - Ifram obtenir une offre - Page offres du moments": "//iframe[@src='//france.my.audi.com/information/?formid=235']",
+    "Page - Identifiez vous - Page offres du moments": "//span[contains(.,'Identifiez-vous')]",
+    "Page - Saisissez votre email - Page offres du moments": "#info_ctc_email",
+    "Page - Bouton suivant - Page offres du moments": "//button[contains(@id,'info_confirm-email')]",
+    "Page - Gamme - Page offres du moments": "(//b[@class='button'][contains(.,'▾')])[1]",
+    "Page - e-tron GT - Page offres du moments": "//li[@data-index='9'][contains(.,'e-tron GT')]",
+    "Page - Modele - Page offres du moments": "(//b[@class='button'][contains(.,'▾')])[2]",
+    "Page - Modele (Audi e-tron GT quattro) - Page offres du moments": "//li[@data-index='0'][contains(.,'Audi e-tron GT quattro')]",
+    "Page - BAUER PARIS WAGRAM (7.1km) - Page offres du moments": "//strong[contains(.,'BAUER PARIS WAGRAM')]",
+    "Page - Image - Page offres du moments": "//img[@src='/assets/img/rdv/rdv_success.jpg']",
+    "Page - Message - Page offres du moments": "//p[contains(@class,'smaller')]",
+    
+    "Footer": "--------------------------------------------------------------------------------------------------------------"
+}
+

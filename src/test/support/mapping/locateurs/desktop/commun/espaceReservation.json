@@ -7,7 +7,7 @@
     "Page - Plus d'information A5 Cabriolet - Espace Reservation": "//a[@href='/fr/web/fr/gamme/a5/a5-cabriolet.html']",
     "Page - Fermer INFORMATION IMPORTANTE - Espace Reservation": "//span[@class='audi-button__text'][contains(.,'Fermer')]",
     "Page - Reserver un essai - Espace Reservation": "(//a[contains(.,'Réserver un essai')])[2]",
-    "Page - Ifram Reserver un essai - Espace Reservation": "body > div.nm-layer-wrapper.nm-default-layer > div > div.nm-layer-inner > div.nm-layer-content.clearfix > div:nth-child(2) > div > div > iframe",
+    "Page - Ifram Reserver un essai - Espace Reservation": "//iframe[@src='//france.my.audi.com/information/?formId=235&range=5&model=21&formid=3934']",
     "Page - Saisissez votre email - Espace Reservation": "#info_ctc_email",
     "Page - Valider votre email - Espace Reservation": "//button[contains(@id,'info_confirm-email')]",
     "Page - Delai d'achat - Espace Reservation": "(//b[@class='button'][contains(.,'▾')])[3]",

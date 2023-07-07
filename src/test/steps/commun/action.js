@@ -13,8 +13,8 @@ const AccederIframe = require('../../support/commun/navigation/accederIframe');
 const CliquerSurIframe = require('../../support/commun/action/cliquerSurIframe');
 const SaisirTexteIframe = require('../../support/commun/action/saisirTexteIframe');
 const AttendreSecondes = require('../../support/commun/navigation/attendreSecondes');
-const VerifierTexteElementIframe = require('../../support/commun/verification/verifierTexteElementIframe');
 const CliquerSurSelecteurIframe = require('../../support/commun/action/cliquerSurSelecteurIframe');
+const DefilerJusquaElement = require('../../support/commun/action/defilerJusquaElement');
 
 let page;
 
@@ -103,7 +103,21 @@ Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans l'iframe$/, {time
 });
 
 Given( /^Je verifie que "(.*)" affiche le texte "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
-    await VerifierTexteElementIframe(iframe, locateur, texteAffiche);
+    await VerifierTexteElement(iframe, locateur, texteAffiche);
 });
 
+Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans la page$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
+    await CliquerSurSelecteurIframe(page, choixSelecteur, locateurSelecteur);
+});
 
+Given(/^Je fais defiler jusqu'a l'element "(.*)"$/, async (locateur) => {
+    await DefilerJusquaElement(page, locateur);
+  });
+
+Given(/^Je verifie que l'element "(.*)" est affiche dans l'iframe$/, {timeout: 25000}, async (locateur) => {
+    await VerifierElementVisible(iframe, locateur);
+});
+
+Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur, couleur) => {
+    await VerifierCouleurTexte(iframe, locateur, couleur);
+});
