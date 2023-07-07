@@ -1,0 +1,35 @@
+
+
+{
+    "PAGE": "Espace Modèles",
+    
+    "Header": "---------------------------------------------------------------------------------------------------------------",
+    
+    
+
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    
+    "Page - Titre par - Modeles" : "//span[contains(.,'Trier par')]",
+    "Page - Selecteur prix - Modeles" : "//input[@id='option-byprice-input']",
+    "Page - Selecteur prix affiche - Modeles" : "//output[@id='option-byprice-output']//span[@class='audi-range-slider__js-dynamic-text']",
+    "Page - Filtre type thermique - Modeles" :"//label[@id='option-thermique-label']",
+    "Page - Filtre type citadine - Modeles" :"//label[@id='option-compact-label']",
+    "Page - Filtre type sportback - Modeles" :"//label[@id='option-sportback-label']",
+    "Page - Filtre type berline - Modeles" :"//label[@id='option-limo-label']",
+    "Page - Filtre type cabriolet - Modeles" :"//label[@id='option-cabrio-label']",
+    "Page - Filtre type avant - Modeles" :"//label[@id='option-avant-label']",
+    "Page - Filtre type allroad quatro - Modeles" :"//label[@id='option-aaq-label']",
+    "Page - Filtre type coupe - Modeles" :"//label[@id='option-coupe-label']",
+    "Page - Filtre type suv - Modeles" :"//label[@id='option-suv-label']",
+    "Page - Filtre type sport - Modeles" :"//label[@id='option-sport-label']",
+    "Page - Filtre type roadster - Modeles" :"//label[@id='option-roadster-label']",
+    "Page - Filtre type spyder - Modeles" :"//label[@id='option-spyder-label']",
+    
+
+    "Page - Bouton resultat affiche - Modeles" : "//span[@class='audi-button__text']",
+    "Page - filtre thermique - Modeles" : "//li[@data-id='option-thermique']",
+    "Page - filtre prix - Modeles" : "//li[@data-id='option-byprice']",
+
+    "Footer": "--------------------------------------------------------------------------------------------------------------"
+}
+
