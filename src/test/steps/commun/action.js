@@ -40,20 +40,44 @@ After(async function (scenario) {
 });
 
 
-Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
+/*Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
     page = await AccederSite(url)
-});
+});*/
 
 Given(/^Je clique sur "(.*)"$/, {timeout: 25000}, async (locateur, ) =>  {
     await CliquerSur(page, locateur)
+});
+
+Given(/^Je clique sur "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur) =>  {
+    await CliquerSurIframe(iframe, locateur);
+});
+
+Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans la page$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
+    await CliquerSurSelecteurIframe(page, choixSelecteur, locateurSelecteur);
+});
+
+Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans l'iframe$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
+    await CliquerSurSelecteurIframe(iframe, choixSelecteur, locateurSelecteur);
 });
 
 Given(/^Je saisis "(.*)" dans le champ "(.*)"$/, {timeout: 25000}, async (texteASaisir,locateur) =>  {
     await SaisirTexte(page, texteASaisir, locateur)
 });
 
+Given(/^Je saisis "(.*)" dans le champ "(.*)" dans l'iframe$/, {timeout: 25000}, async (texteASaisir,locateur) =>  {
+    await SaisirTexteIframe(iframe, texteASaisir,locateur);
+});
+
 Given(/^Je tape sur la touche du clavier "([^"]*)?"$/, {timeout: 30000}, async (toucheClavier) =>  {
     await TaperTouche(page, toucheClavier)
+});
+
+Given(/^Je fais defiler jusqu'a l'element "(.*)"$/, async (locateur) => {
+    await DefilerJusquaElement(page, locateur);
+  });
+
+Given( /^Je selectionne "(.*)" dans le curseur "(.*)"$/, {timeout: 25000}, async (nombre, locateur) =>  {  
+    await SelectionnerCurseur(page, nombre, locateur);
 });
 
 Given(/^Je coche la case "(.*)"$/,async (locateur) =>  {
@@ -72,55 +96,30 @@ Given(/^Je bascule vers l'iframe "(.*)"$/, {timeout: 25000}, async (iframeLocato
     iframe = await AccederIframe(page, iframeLocator);
 });
 
-Given(/^Je clique sur "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur) =>  {
-    await CliquerSurIframe(iframe, locateur);
-});
-
-Given(/^Je saisis "(.*)" dans le champ "(.*)" dans l'iframe$/, {timeout: 25000}, async (texteASaisir,locateur) =>  {
-    await SaisirTexteIframe(iframe, texteASaisir,locateur);
+Given(/^J'attend "(.*)" secondes$/, {timeout: 25000}, async (secondesAAttendre) => {
+    await AttendreSecondes(page, secondesAAttendre)
 });
 
 Given( /^Je verifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
     await VerifierTexteElement(page, locateur, texteAffiche);
 });
 
+Given( /^Je verifie que "(.*)" affiche le texte "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
+    await VerifierTexteElement(iframe, locateur, texteAffiche);
+});
+
 Given(/^Je verifie que l'element "(.*)" est affiche$/, {timeout: 25000}, async (locateur) => {
     await VerifierElementVisible(page, locateur);
+});
+
+Given(/^Je verifie que l'element "(.*)" est affiche dans l'iframe$/, {timeout: 25000}, async (locateur) => {
+    await VerifierElementVisible(iframe, locateur);
 });
 
 Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)"$/, {timeout: 25000}, async (locateur, couleur) => {
     await VerifierCouleurTexte(page, locateur, couleur);
 });
 
-Given(/^J'attend "(.*)" secondes$/, {timeout: 25000}, async (secondesAAttendre) => {
-    await AttendreSecondes(page, secondesAAttendre)
-});
-
-Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans l'iframe$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
-    await CliquerSurSelecteurIframe(iframe, choixSelecteur, locateurSelecteur);
-});
-
-Given( /^Je verifie que "(.*)" affiche le texte "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
-    await VerifierTexteElement(iframe, locateur, texteAffiche);
-});
-
-
-Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans la page$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
-    await CliquerSurSelecteurIframe(page, choixSelecteur, locateurSelecteur);
-});
-
-Given(/^Je fais defiler jusqu'a l'element "(.*)"$/, async (locateur) => {
-    await DefilerJusquaElement(page, locateur);
-  });
-
-Given(/^Je verifie que l'element "(.*)" est affiche dans l'iframe$/, {timeout: 25000}, async (locateur) => {
-    await VerifierElementVisible(iframe, locateur);
-});
-
 Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur, couleur) => {
     await VerifierCouleurTexte(iframe, locateur, couleur);
-});
-
-Given( /^Je selectionne "(.*)" dans le curseur "(.*)"$/, {timeout: 25000}, async (nombre, locateur) =>  {  
-    await SelectionnerCurseur(page, nombre, locateur);
 });

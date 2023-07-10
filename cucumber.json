@@ -4,7 +4,7 @@
             "snippetInterface": "async-await"
         },
         "paths": [
-            "src/test/features/webDesktop/accueil/Obtenir_offre_voiture_electrique.feature"
+            "src/test/features/webDesktop/accueil/Recherche_modele_critere.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,
