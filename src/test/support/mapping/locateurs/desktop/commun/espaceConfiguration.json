@@ -1,33 +1,37 @@
 {
-    "PAGE": "Page d'accueil Audi France",
+    "PAGE": "Espace configuration",
 
-    "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Header": "---------------------------------------------------------------------------------------------------------------",
     
-    "Configurer - Page d'accueil Audi France": "(//a[@href='https://www.audi.fr/fr/web/fr/gamme/q4-e-tron/audi-q4-e-tron/finitions.html'][contains(.,'Configurer')])[1]",
+    "Page": "---------------------------------------------------------------------------------------------------------------",
+    "Page - Configurer Audi Q4 e-tron - Espace configuration": "(//a[contains(.,'Configurer')])[2]",
+    "Page - S line - Espace configuration": "(//a[contains(@class,'nm-checkbox-1 nm-j-configurator-delegate-click')])[3]",
+    "Page - Modele Q4 e-tron - Espace configuration": "//*[@id='dbad:audi:basket']/div/div/div/div[1]",
+    "Page - Suivant (Moteurs) - Espace configuration": "(//a[@class='audi-button audi-button--ghost audi-button--inverted nm-pageOpen'][contains(.,'Suivant (Moteurs)')])[1]",
+    "Page - Réinitialiser les filtres - Espace configuration": "body > div.nm-wrapper > div.nm-wrapper-content > div > div.nm-content.clearfix > div:nth-child(2) > div.content.parsys > audi-configurator-engine-selection > div.nm-module-engine-selection-no-results > button",
+    "Page - quattro - Espace configuration": "(//span[contains(@class,'audi-checkbox-symbol nm-module-engine-selection-filter-checkbox-symbol')])[1]",
+    "Page - S line 45 e-tron quattro - Espace configuration": "(//span[contains(@class,'audi-checkbox-symbol nm-module-engine-selection-checkbox-symbol')])[6]",
+    "Page - Suivant (Exterieur) - Espace configuration": "(//a[@class='audi-button audi-button--ghost audi-button--inverted nm-pageOpen'][contains(.,'Suivant (Extérieur)')])[1]",
+    "Page - Couleur Bleu Navarre Métallisé - Espace configuration": "(//img[contains(@class,'nm-module-tiles-categorized-image')])[5]",
+    "Page - Jantes Audi Sport, style étoile à 5 branches en W - Espace configuration": "(//img[contains(@class,'nm-module-tiles-categorized-image')])[15]",
+    "Page - Suivant (Interieur) - Espace configuration": "(//a[@class='audi-button audi-button--ghost audi-button--inverted nm-pageOpen'][contains(.,'Suivant (Intérieur)')])[1]",
+    "Page - Sellerie Cuir - Espace configuration": "(//img[@alt='fb-pattern.png'])[13]",
+    "Page - Valider Cuir - Espace configuration": "//a[@data-conflict='submit']",
+    "Page - Votre Audi - Espace configuration": "(//a[@class=' nm-pageOpen audi-basket-button-cta audi-button audi-button--inverted'][contains(.,'Votre Audi')])[1]",
+    "Page - Enregistrer la configuration - Espace configuration": "(//a[@href='/fr/web/fr/tools/nemo/commons/new-save-configuration.html'][contains(.,'Enregistrer la configuration')])[1]",
+    "Page - Se conecter - Espace configuration": "#login",
+    "Page - Trier par - Espace configuration": "//div[@data-label-open='Trier par']",
+    "Page - Q5 - Espace configuration": "#option-q5-label",
+    "Page - Resultats affiches - Espace configuration": "(//span[contains(.,'Résultats affichés')])[2]",
+    "Page - Modele Q5 - Espace configuration": "#nm-id-content > div.renders > audi-modelfinder > div > div > audi-modelfinder-car-model:nth-child(1)",
+    "Page - Plus informations - Espace configuration": "//a[@href='/fr/web/fr/gamme/q5/q5.html']",
+    "Page - Fermer INFORMATION IMPORTANTE - Espace configuration": "//a[contains(.,'Fermer')]",
+    "Page - Configurer Q5 - Espace configuration": "(//a[contains(.,'Configurer')])[2]",
+    "Page - Texte Diesel - Espace configuration": "//span[contains(.,'Diesel')]",
+    "Page - Diesel - Espace configuration": "(//span[contains(@class,'audi-checkbox-symbol nm-module-engine-selection-filter-checkbox-symbol')])[1]",
+    "Page - Couleur vert district métallisées - Espace configuration": "(//img[@alt='fb-pattern.png'])[10]",
+    "Page - Configurer Q3 - Espace configuration": "(//a[contains(.,'Configurer')])[2]",
+    "Page - Couleurs personnalisées Audi exclusive - Espace configuration": "(//img[@class='nm-module-tiles-categorized-image'])[12]",
 
-    "Cocher Design Luxe - Page d'accueil Audi France": "(//a[@href='#'])[9]",
-
-    "Suivant (Moteurs) - Page d'accueil Audi France": "(//a[@class='audi-button audi-button--ghost audi-button--inverted nm-pageOpen'][contains(.,'Suivant (Moteurs)')])[1]",
-
-    "Réinitialiser les filtres - Page d'accueil Audi France": "body > div.nm-wrapper > div.nm-wrapper-content > div > div.nm-content.clearfix > div:nth-child(2) > div.content.parsys > audi-configurator-engine-selection > div.nm-module-engine-selection-no-results > button",
-
-    "Cocher quattro - Page d'accueil Audi France": "(//span[contains(@class,'audi-checkbox-symbol nm-module-engine-selection-filter-checkbox-symbol')])[1]",
-
-    "Cocher Design Luxe 50 e-tron quattro - Page d'accueil Audi France": "(//span[contains(@class,'audi-checkbox-symbol nm-module-engine-selection-checkbox-symbol')])[9]",
-
-    "Suivant (Exterieur) - Page d'accueil Audi France": "(//a[@class='audi-button audi-button--ghost audi-button--inverted nm-pageOpen'][contains(.,'Suivant (Extérieur)')])[1]",
-
-    "Couleurs métallisées - Page d'accueil Audi France": "//img[@src='//mediaservice.audi.com/media/cdb/data/b5666895-161d-4b63-ba60-818253888e29.jpg?alt=//www.audi.fr/bin/nemo.static/cms4i-nemo/assets/img/fallback/fb-pattern.png']",
-
-    "Jantes 20' - Page d'accueil Audi France": "//img[@src='//mediaservice.audi.com/media/cdb/data/170907f0-ed33-48f0-ab67-fff7f333fb06.jpg?alt=//www.audi.fr/bin/nemo.static/cms4i-nemo/assets/img/fallback/fb-rim.png']",
-
-    "Suivant (Interieur) - Page d'accueil Audi France": "(//a[@class='audi-button audi-button--ghost audi-button--inverted nm-pageOpen'][contains(.,'Suivant (Intérieur)')])[1]",
-
-    "Volant en cuir sport à branches doubles - Page d'accueil Audi France": "body > div.nm-wrapper > div.nm-wrapper-content > div > div.nm-content.clearfix > div:nth-child(2) > div.content.parsys > section:nth-child(8) > div:nth-child(2) > div > div.nm-option-tile-item-wrapper.nm-j-configurator-item.nm-j-configurator-status_11000 > div > div.nm-option-tile-checkbox.nm-j-configurator-delegate-click > span > span",
-
-    "Votre Audi - Page d'accueil Audi France": "(//a[@class=' nm-pageOpen audi-basket-button-cta audi-button audi-button--inverted'][contains(.,'Votre Audi')])[1]",
-
-    "Enregistrer la configuration - Page d'accueil Audi France": "(//a[@href='/fr/web/fr/tools/nemo/commons/new-save-configuration.html'][contains(.,'Enregistrer la configuration')])[1]",
-
-    "Se conecter - Page d'accueil Audi France": "#login"
+    "Footer": "--------------------------------------------------------------------------------------------------------------"
 }

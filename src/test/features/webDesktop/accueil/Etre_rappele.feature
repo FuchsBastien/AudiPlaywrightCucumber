@@ -5,9 +5,13 @@ Feature: Etre_rappele
         #And Je clique sur "Page - Cookies - Page d'accueil"
     
     Scenario: Etre_rappele
-        #When Je clique sur "Header - Menu - Page d'accueil"
-        And Je clique sur "Header - Modele - Page d'accueil"
+        Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+        When Je clique sur "Header - Menu - Page d'accueil"
+        And Je verifie que l'element "Header - Modeles - Page d'accueil" est affiche
+        And Je clique sur "Header - Modeles - Page d'accueil"
+        And Je verifie que l'element "Header - Pour les professionnels - Page d'accueil" est affiche
         Then Je clique sur "Header - Pour les professionnels - Page d'accueil"
+        And Je verifie que l'element "Header - Lien Etre rappele - Espace Rappele" est affiche
         When Je clique sur "Header - Lien Etre rappele - Espace Rappele"
         Then Je bascule vers l'iframe "Page - Ifram A la date de mon choix - Espace Rappele"
         And Je clique sur "Page - Immédiatement - Espace Rappele" dans l'iframe

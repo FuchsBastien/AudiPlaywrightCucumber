@@ -5,6 +5,8 @@ Feature: Louer_voiture
         #And Je clique sur "Page - Cookies - Page d'accueil"
 
     Scenario: Louer_voiture
+        Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+        And Je clique sur "Header - Menu - Page d'accueil"
         When Je clique sur "Header - Lien Achat et Location - Page d'accueil"
         And Je clique sur "Header - Lien Audi rent : location courte duree - Page d'accueil"
         And Je clique sur "Page - Bouton Louer une Audi - Location"
@@ -23,6 +25,7 @@ Feature: Louer_voiture
         And Je clique sur "Page - label choix date depart - Location" dans l'iframe
         And Je clique sur "Page - label date retour - Location" dans l'iframe
         And Je clique sur "Page - label choix date retour - Location" dans l'iframe
+        And Je clique sur "Page - Fermer Annonce - Page offres du moments"
         And Je clique sur "Page - bouton chercher- Location" dans l'iframe
 
         #Etape 2 Choix du véhicule

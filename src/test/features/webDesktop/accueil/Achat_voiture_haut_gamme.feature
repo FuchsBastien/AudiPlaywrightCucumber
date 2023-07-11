@@ -5,12 +5,16 @@ Feature: Acheter une voiture avec le critère de recherche 'Haut de gamme'
         #And Je clique sur "Page - Cookies - Page d'accueil"
 
     Scenario: je réserve une Audi Haut de gamme (Audi A6 allroad quattro)
+        Given Je fais defiler jusqu'a l'element "Page - Véhicules neufs - Page d'accueil"
+        And Je verifie que l'element "Page - Véhicules neufs - Page d'accueil" est affiche
         When Je clique sur "Page - Véhicules neufs - Page d'accueil"
-        And J'attend et je clique sur "Page - Réinitialiser tous les filtres - Espace voiture Haut de Gamme"
+        And Je clique sur "Page - Réinitialiser tous les filtres - Espace voiture Haut de Gamme"
         And Je clique sur "Page - Equipement - Espace voiture Haut de Gamme"
-        And J'attend et je clique sur "Page - Haut de gamme: Avus Extended - Espace voiture Haut de Gamme"
+        And Je clique sur "Page - Haut de gamme: Avus Extended - Espace voiture Haut de Gamme"
         And Je verifie que l'element "Page - Filtre Avus Extended - Espace voiture Haut de Gamme" est affiche
-        Then J'attend et je clique sur "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme"
+        And J'attend "3" secondes
+        And Je fais defiler jusqu'a l'element "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme"
+        Then Je clique sur "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme"
         And Je verifie que "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme" affiche le texte "Audi A6 allroad quattro"
         And Je verifie que l'element "Page - Audi A6 allroad quattro - Espace voiture Haut de Gamme" est affiche
         And Je verifie que le texte "Page - Réservé votre Audi - Espace voiture Haut de Gamme" est de couleur "rgb(0, 0, 0)"

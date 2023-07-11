@@ -36,7 +36,9 @@ After(async function (scenario) {
     }
     //fermeture navigateur et page
     await page.close();
-    await browser.close() 
+    await browser.close()   
+});
+
 
 });
 

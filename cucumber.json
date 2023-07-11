@@ -5,7 +5,7 @@
         },
         
         "paths": [
-            "src/test/features/webDesktop/accueil/Recherche_modele_critere.feature"
+            "src/test/features/webDesktop/accueil/Reserver_sur_Heycar.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,
