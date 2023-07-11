@@ -6,7 +6,7 @@ Feature: Etre_rappele
     
     Scenario: Etre_rappele
         #When Je clique sur "Header - Menu - Page d'accueil"
-        And Je clique sur "Header - Modeles - Page d'accueil"
+        And Je clique sur "Header - Modele - Page d'accueil"
         Then Je clique sur "Header - Pour les professionnels - Page d'accueil"
         When Je clique sur "Header - Lien Etre rappele - Espace Rappele"
         Then Je bascule vers l'iframe "Page - Ifram A la date de mon choix - Espace Rappele"

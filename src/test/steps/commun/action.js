@@ -1,4 +1,4 @@
-const {Before, After, Given, When, Then, And} = require('@cucumber/cucumber');
+const {Before, After, Given, When, Then, And, AfterAll} = require('@cucumber/cucumber');
 const AccederSite = require('../../support/commun/navigation/accederSite');
 const CliquerSur = require('../../support/commun/action/cliquerSur');
 const SaisirTexte = require('../../support/commun/action/saisirTexte');
@@ -30,15 +30,15 @@ Before({timeout: 25000}, async function () {
 After(async function (scenario) {
     //screenshot si erreur
     if (scenario.result.status === 'FAILED') {
-    const screenshotPath = `./playwright-report/${scenario.pickle.name}/screenshots/image.jpg`
+    const screenshotPath = `./reporting/screenshots/${scenario.pickle.name}.png`
     const img = await page.screenshot({ path: screenshotPath });
     await this.attach(img, 'image/png');
     }
     //fermeture navigateur et page
-    //await page.close();
-    //await browser.close()   
-});
+    await page.close();
+    await browser.close() 
 
+});
 
 /*Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
     page = await AccederSite(url)

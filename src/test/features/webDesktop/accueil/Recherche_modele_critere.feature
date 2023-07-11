@@ -1,7 +1,7 @@
 Feature: Je cherche voiture en fonction de critère de recherche
 
     Scenario: Je veux trouver toutes les voitures qui ont un prix maximal de 65 000,00 Eur et qui sont de type Thermique
-    When Je clique sur "Header - Modeles - Page d'accueil"
+    When Je clique sur "Header - Modeles - Pag d'accueil"
     And Je clique sur "Header - Tous les modeles - Page d'accueil"
     And Je clique sur "Page - Trier par - Modeles"
 
