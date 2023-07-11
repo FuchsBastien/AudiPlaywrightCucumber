@@ -7,6 +7,7 @@
     "Header - Tous les modeles - Page d'accueil": "//a[@tabindex='0'][contains(.,'Tous les modèles')]",
     "Header - Pour les professionnels - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/fleet/modeles-business.html']",
     "Header - Champ recherche - Page d'accueil": "//input[@id='search__basic']",
+    "Header - Audi Q3 Sportback - Page d'accueil": "(//span[contains(.,'Audi Q3 Sportback')])[2]",
     "Header - Logo Recherche - Page d'accueil": "//button[contains(@aria-label,'Rechercher')]",
     "Header - Lien Achat et Location - Page d'accueil": "(//span[contains(.,'Achat et location')])[1]",
     "Header - Lien Offres du moment - Page d'accueil": "//a[contains(@aria-label,'Offres du moment')]",
@@ -19,7 +20,7 @@
   
     "Page": "---------------------------------------------------------------------------------------------------------------",
     "Page - Cookies - Page d'accueil": "//button[@id='ensCancel']",
-    "Page - Bouton Découvrir": "//a[contains(.,'Découvrir l’Audi Q4 e-tron')]",
+    "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil": "//a[contains(.,'Découvrir l’Audi Q4 e-tron')]",
     "Page - Bouton Choix Modèles Véhicules Disponibles - Page d'accueil": "(//label[contains(@class,'label')])[1]",
     "Page - Bouton Choix Modèle Q8 e-tron Disponible - Page d'accueil": "//span[@class='audi-link-m__text'][normalize-space(.)='Q8 e-tron']",
     "Page - Bouton Choix Modèle A3 sportback Disponible - Page d'accueil": "//span[@class='audi-link-m__text'][normalize-space(.)='A3 Sportback']",

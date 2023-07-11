@@ -35,8 +35,8 @@ After(async function (scenario) {
     await this.attach(img, 'image/png');
     }
     //fermeture navigateur et page
-    //await page.close();
-    //await browser.close()   
+    await page.close();
+    await browser.close()   
 });
 
 
