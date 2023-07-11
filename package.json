@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test"
+    "Execution": "---------------------------------------------------------------------------------------------",
+    "test": "cucumber-js test",
+    "Reporting": "---------------------------------------------------------------------------------------------",
+    "report" : "node reporting/config/report.js"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^9.2.0",
-    "@playwright/test": "^1.35.1"
+    "@playwright/test": "^1.35.1",
+    "multiple-cucumber-html-reporter": "^3.4.0"
   }
 }
