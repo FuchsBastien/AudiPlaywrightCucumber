@@ -1,9 +1,5 @@
 Feature: Reserver_essai
 
-    #Background: 
-        #Given Je suis sur le site "https://www.audi.fr/"
-        #And Je clique sur "Page - Cookies - Page d'accueil"
-    
     Scenario: Reserver_essai
         Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
         When Je clique sur "Header - Menu - Page d'accueil"

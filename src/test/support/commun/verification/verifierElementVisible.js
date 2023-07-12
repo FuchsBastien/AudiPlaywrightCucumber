@@ -18,7 +18,6 @@ module.exports = async function verifierElementVisible (page, locateur) {
         if(elementVisible == true) {
             break;
         }
-
         i++;
     }
 

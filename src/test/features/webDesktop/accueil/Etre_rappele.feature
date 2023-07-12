@@ -1,9 +1,5 @@
 Feature: Etre_rappele
 
-    #Background: 
-        #Given Je suis sur le site "https://www.audi.fr/"
-        #And Je clique sur "Page - Cookies - Page d'accueil"
-    
     Scenario: Etre_rappele
         Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
         When Je clique sur "Header - Menu - Page d'accueil"

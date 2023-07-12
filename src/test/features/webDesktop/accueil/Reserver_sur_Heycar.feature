@@ -1,9 +1,5 @@
 Feature: Je veux reserver une Audi d'occasion sur Heycar en partant de la page d'acceuil du site d'Audi
 
-    #Background: 
-        #Given Je suis sur le site "https://www.audi.fr/"
-        #And Je clique sur "Page - Cookies - Page d'accueil"
-
     Scenario: reserver une Audi sur le site Heycar
         Given Je fais defiler jusqu'a l'element "Footer - Heycar - Page d'accueil"
         And Je verifie que l'element "Footer - Heycar - Page d'accueil" est affiche
@@ -53,8 +49,8 @@ Feature: Je veux reserver une Audi d'occasion sur Heycar en partant de la page d
 
         #Confirmation
         And Je saisis "4624 7482 3324 9080" dans le champ "Page -  Numéro de carte - Page reserver sur Heycar"
-        And Je clique sur le choix "02" du selecteur "Page -  Mois - Page reserver sur Heycar" dans la page
-        And Je clique sur le choix "2025" du selecteur "Page -  Année - Page reserver sur Heycar" dans la page
+        And Je clique sur le choix "02" du selecteur "Page -  Mois - Page reserver sur Heycar"
+        And Je clique sur le choix "2025" du selecteur "Page -  Année - Page reserver sur Heycar"
         And Je saisis "123" dans le champ "Page -  Cryptogramme visuel - Page reserver sur Heycar"
         And Je clique sur "Page -  Enregistrer cette carte (Non) - Page reserver sur Heycar"
         Then Je clique sur "Page -  Valider - Page reserver sur Heycar"

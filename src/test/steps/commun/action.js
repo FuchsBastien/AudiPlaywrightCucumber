@@ -1,10 +1,8 @@
 const {Before, After, Given, When, Then, And, AfterAll} = require('@cucumber/cucumber');
-const AccederSite = require('../../support/commun/navigation/accederSite');
 const CliquerSur = require('../../support/commun/action/cliquerSur');
 const SaisirTexte = require('../../support/commun/action/saisirTexte');
 const TaperTouche = require('../../support/commun/action/taperTouche');
 const Cocher = require('../../support/commun/action/cocher');
-const CliquerSurEtAttendre = require('../../support/commun/action/cliquerSurEtAttendre');
 const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
 const VerifierTexteElement = require('../../support/commun/verification/verifierTexteElement');
 const VerifierElementVisible = require('../../support/commun/verification/verifierElementVisible');
@@ -17,12 +15,15 @@ const CliquerSurSelecteurIframe = require('../../support/commun/action/cliquerSu
 const DefilerJusquaElement = require('../../support/commun/action/defilerJusquaElement');
 const SelectionnerCurseur = require('../../support/commun/action/selectionnerCurseur');
 
-let page;
+//const AccederSite = require('../../support/commun/navigation/accederSite');
 
-Before({timeout: 25000}, async function () {
+//let page;
+//let iframe;
+
+/*Before({timeout: 25000}, async function () {
     let url = "https://www.audi.fr/"
-    page = await AccederSite(url)
-
+   ge sert pour le page.screenshot dans after
+    page = await AccederSite(url) //pa
     let cookies = "Page - Cookies - Page d'accueil"
     await CliquerSur(page, cookies)  
 })
@@ -37,14 +38,8 @@ After(async function (scenario) {
     //fermeture navigateur et page
     await page.close();
     await browser.close()   
-});
-
-
-});
-
-/*Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
-    page = await AccederSite(url)
 });*/
+
 
 Given(/^Je clique sur "(.*)"$/, {timeout: 25000}, async (locateur, ) =>  {
     await CliquerSur(page, locateur)
@@ -54,7 +49,7 @@ Given(/^Je clique sur "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur)
     await CliquerSurIframe(iframe, locateur);
 });
 
-Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans la page$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
+Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)"$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
     await CliquerSurSelecteurIframe(page, choixSelecteur, locateurSelecteur);
 });
 
@@ -76,18 +71,26 @@ Given(/^Je tape sur la touche du clavier "([^"]*)?"$/, {timeout: 30000}, async (
 
 Given(/^Je fais defiler jusqu'a l'element "(.*)"$/, async (locateur) => {
     await DefilerJusquaElement(page, locateur);
-  });
+});
+
+Given(/^Je fais defiler jusqu'a l'element "(.*)" dans l'iframe$/, async (locateur) => {
+    await DefilerJusquaElement(iframe, locateur);
+});  
 
 Given( /^Je selectionne "(.*)" dans le curseur "(.*)"$/, {timeout: 25000}, async (nombre, locateur) =>  {  
     await SelectionnerCurseur(page, nombre, locateur);
+});
+
+Given( /^Je selectionne "(.*)" dans le curseur "(.*)" dans l'iframe$/, {timeout: 25000}, async (nombre, locateur) =>  {  
+    await SelectionnerCurseur(iframe, nombre, locateur);
 });
 
 Given(/^Je coche la case "(.*)"$/,async (locateur) =>  {
     await Cocher(page, locateur)
 });
 
-Given(/^J'attend et je clique sur "(.*)"$/, {timeout: 25000}, async (locateur) =>  {
-    await CliquerSurEtAttendre(page, locateur)
+Given(/^Je coche la case "(.*)" dans l'iframe$/,async (locateur) =>  {
+    await Cocher(iframe, locateur)
 });
 
 Given(/^Je vais sur l'onglet "(.*)"$/, {timeout: 25000}, async (numOnglet) =>  {
@@ -125,3 +128,6 @@ Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)"$/, {timeout: 25000}
 Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur, couleur) => {
     await VerifierCouleurTexte(iframe, locateur, couleur);
 });
+
+
+

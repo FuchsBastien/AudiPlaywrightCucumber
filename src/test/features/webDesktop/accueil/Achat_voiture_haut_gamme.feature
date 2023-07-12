@@ -1,9 +1,5 @@
 Feature: Acheter une voiture avec le critère de recherche 'Haut de gamme'
 
-    #Background: 
-        #Given Je suis sur le site "https://www.audi.fr/"
-        #And Je clique sur "Page - Cookies - Page d'accueil"
-
     Scenario: je réserve une Audi Haut de gamme (Audi A6 allroad quattro)
         Given Je fais defiler jusqu'a l'element "Page - Véhicules neufs - Page d'accueil"
         And Je verifie que l'element "Page - Véhicules neufs - Page d'accueil" est affiche
