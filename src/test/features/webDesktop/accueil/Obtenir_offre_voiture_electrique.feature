@@ -19,11 +19,11 @@ Feature:Je shouaite regarder les offres du moments des voitures electriques pour
         #Saisir mail
         And Je verifie que l'element "Page - Identifiez vous - Page offres du moments" est affiche dans l'iframe
         And Je verifie que "Page - Identifiez vous - Page offres du moments" affiche le texte "Identifiez-vous" dans l'iframe
-        And Je verifie que le texte "Page - Identifiez vous - Page offres du moments" est de couleur "rgb(0, 0, 0)" dans l'iframe
+        And Je verifie que le texte "Page - Identifiez vous - Page offres du moments" est de couleur "Noir" dans l'iframe
         And Je saisis "alt.em-bovhbcad@yopmail.com" dans le champ "Page - Saisissez votre email - Page offres du moments" dans l'iframe
         And Je verifie que l'element "Page - Bouton Valider - Page offres du moments" est affiche dans l'iframe
         And Je verifie que "Page - Bouton Valider - Page offres du moments" affiche le texte "Valider" dans l'iframe
-        And Je verifie que le texte "Page - Bouton Valider - Page offres du moments" est de couleur "rgb(255, 255, 255)" dans l'iframe
+        And Je verifie que le texte "Page - Bouton Valider - Page offres du moments" est de couleur "Blanc" dans l'iframe
         Then Je clique sur "Page - Bouton Valider - Page offres du moments" dans l'iframe
 
         #Connecter a mon espace
@@ -33,7 +33,7 @@ Feature:Je shouaite regarder les offres du moments des voitures electriques pour
         #Completez les informations
         And Je verifie que l'element "Page - Completez les informations - Page offres du moments" est affiche
         And Je verifie que "Page - Completez les informations - Page offres du moments" affiche le texte "Complétez les informations"
-        And Je verifie que le texte "Page - Completez les informations - Page offres du moments" est de couleur "rgb(0, 0, 0)"
+        And Je verifie que le texte "Page - Completez les informations - Page offres du moments" est de couleur "Noir"
         And Je clique sur "Page - Gamme - Page offres du moments"
         And Je clique sur "Page - e-tron GT - Page offres du moments"
         And Je clique sur "Page - Modele - Page offres du moments"
@@ -50,18 +50,18 @@ Feature:Je shouaite regarder les offres du moments des voitures electriques pour
         And Je clique sur "Page - BAUER PARIS WAGRAM (7.1km) - Page offres du moments"
         And Je verifie que l'element "Page - Suivant - Espace Reservation" est affiche
         And Je verifie que "Page - Suivant - Espace Reservation" affiche le texte "Suivant"
-        And Je verifie que le texte "Page - Suivant - Espace Reservation" est de couleur "rgb(255, 255, 255)"
+        And Je verifie que le texte "Page - Suivant - Espace Reservation" est de couleur "Blanc"
         Then Je clique sur "Page - Suivant - Espace Reservation"
 
         #Validez votre demande
         And Je verifie que l'element "Page - Validez votre demande - Page offres du moments" est affiche
         And Je verifie que "Page - Validez votre demande - Page offres du moments" affiche le texte "Validez votre demande"
-        And Je verifie que le texte "Page - Validez votre demande - Page offres du moments" est de couleur "rgb(0, 0, 0)"
+        And Je verifie que le texte "Page - Validez votre demande - Page offres du moments" est de couleur "Noir"
         And Je clique sur "Page - Gener M - Espace Reservation"
         And Je clique sur "Page - Cocher J'accepte les conditions - Espace Reservation"
         And Je verifie que l'element "Page - Envoyer - Espace Reservation" est affiche
         And Je verifie que "Page - Envoyer - Espace Reservation" affiche le texte "Envoyer"
-        And Je verifie que le texte "Page - Envoyer - Espace Reservation" est de couleur "rgb(255, 255, 255)"
+        And Je verifie que le texte "Page - Envoyer - Espace Reservation" est de couleur "Blanc"
         Then Je clique sur "Page - Envoyer - Espace Reservation"
         And J'attend "3" secondes
         And Je verifie que l'element "Page - Image - Page offres du moments" est affiche

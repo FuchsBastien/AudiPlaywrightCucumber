@@ -39,9 +39,6 @@ After(async function (scenario) {
     await browser.close()   
 });
 
-
-});
-
 /*Given(/^Je suis sur le site "(.*)"$/, {timeout: 25000}, async (url) => {
     page = await AccederSite(url)
 });*/

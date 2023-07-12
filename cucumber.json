@@ -5,7 +5,7 @@
         },
         
         "paths": [
-            "src/test/features/webDesktop/accueil/Reserver_sur_Heycar.feature"
+            "src/test/features/webDesktop/accueil/*.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,

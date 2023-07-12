@@ -9,13 +9,13 @@
         And Je verifie que l'element "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil" est affiche
         And Je clique sur "Page - Bouton Choix Modèle <modèle> Disponible - Page d'accueil"
         And Je clique sur "Page - Lien <modèle> Neufs Disponibles - Page d'accueil"
-        And Je verifie que le texte "Page - Titre Stock Audi France - Page recherche Vehicules" est de couleur "#4C4C4C"
+        And Je verifie que le texte "Page - Titre Stock Audi France - Page recherche Vehicules" est de couleur "Noir"
         And J'attend "3" secondes
         And Je clique sur "Page - Premier Résultat Stock - Page recherche Vehicules"
         And Je clique sur "Page - Bouton Contacter le partenaire - Page recherche Vehicules"
         And Je vais sur l'onglet "1"
         And Je verifie que "Page - Titre Identifiez vous - Page formulaire" affiche le texte "Identifiez-vous"
-        And Je verifie que le texte "Page - Titre Identifiez vous - Page formulaire" est de couleur "rgb(0, 0, 0)"
+        And Je verifie que le texte "Page - Titre Identifiez vous - Page formulaire" est de couleur "Noir"
         And Je saisis "bastien.fuchs@outlook.fr" dans le champ "Page - Champ Mail - Page formulaire"
         And Je clique sur "Page - Bouton Valider - Page formulaire"
         And Je clique sur "Page - Selection Délai d'achat - Page formulaire"

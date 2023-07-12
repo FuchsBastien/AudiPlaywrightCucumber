@@ -25,14 +25,14 @@ Feature: Accueil_login
     And J'attend "3" secondes
     And Je verifie que l'element "Page - Bouton Mon nom" est affiche
     And Je verifie que "Page - Bouton Mon nom" affiche le texte "Bastien"
-    And Je verifie que le texte "Page - Bouton Mon nom" est de couleur "rgb(0, 0, 0)"
+    And Je verifie que le texte "Page - Bouton Mon nom" est de couleur "Noir"
     And Je clique sur "Page - Bouton Mon nom"
     And Je verifie que l'element "Page - Bouton Configurations enregistrées" est affiche
     And Je clique sur "Page - Bouton Configurations enregistrées"
     And J'attend "3" secondes
     And Je verifie que l'element "Page - Bouton Mon nom" est affiche
     And Je verifie que "Page - Bouton Mon nom" affiche le texte "Bastien"
-    And Je verifie que le texte "Page - Bouton Mon nom" est de couleur "rgb(0, 0, 0)"
+    And Je verifie que le texte "Page - Bouton Mon nom" est de couleur "Noir"
     And Je clique sur "Page - Bouton Mon nom"
     And Je verifie que l'element "Page - Bouton Se deconnecter" est affiche
     And Je clique sur "Page - Bouton Se deconnecter"

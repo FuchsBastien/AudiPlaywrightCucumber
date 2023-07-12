@@ -13,7 +13,7 @@
     "Page - Filtre Île-de-France - Page reserver sur Heycar": "//span[text()='Île-de-France']",
     "Page - Filtre Kilométrage - Page reserver sur Heycar": "//span[text()='80 000 km – 150 000 km']",
     "Page - Filtre Couleur du véhicule - Page reserver sur Heycar": "//span[@class='css-1cx0xm8'][contains(.,'Gris')]",
-    "Page - Réserver Audi Q7 50 TDI 286ch S Edition quattro tiptronic 7 places - Page reserver sur Heycar": "(//button[@data-testid='buyOnlineButton'])[1]",
+    "Page - premier bouton reserver - Page reserver sur Heycar": "(//button[@data-testid='buyOnlineButton'])[1]",
     "Page - Titre formulaire coordonnees - Page reserver sur Heycar": "//span[@data-cy='moduleTitle'][contains(.,'Entrez vos coordonnées pour réserver le véhicule')]",
     "Page - Sexe M - Page reserver sur Heycar": "//input[contains(@id,'civilityIdBlock_BV_option_1')]",
     "Page -  Prenom - Page reserver sur Heycar": "//input[@id='firstnameIdBlock']",
