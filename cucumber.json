@@ -5,12 +5,13 @@
         },
         
         "paths": [
-            "src/test/features/webDesktop/accueil/Reserver_sur_Heycar.feature"
+            "src/test/features/webDesktop/accueil/Reservation_voiture_neuve.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,
         "require": [
-            "src/test/steps/commun/action.js"
+            "src/test/steps/commun/action.js",
+            "src/hook/hook.js"
         ],  
 
         "format": [

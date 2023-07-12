@@ -1,9 +1,5 @@
 Feature: Configuration_voiture
 
-    #Background: 
-        #Given Je suis sur le site "https://www.audi.fr/"
-        #And Je clique sur "Page - Cookies - Page d'accueil"
-
     Scenario: Configuration_voiture
         Given Je verifie que l'element "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil" est affiche
         And Je verifie que "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil" affiche le texte "Découvrir l’Audi Q4 e-tron"
