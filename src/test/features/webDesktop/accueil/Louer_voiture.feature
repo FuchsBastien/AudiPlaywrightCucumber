@@ -1,12 +1,10 @@
 Feature: Louer_voiture
 
-    #Background: 
-        #Given Je suis sur le site "https://www.audi.fr/"
-        #And Je clique sur "Page - Cookies - Page d'accueil"
-
     Scenario: Louer_voiture
-        Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
-        And Je clique sur "Header - Menu - Page d'accueil"
+
+        #Accès Louer une Audi
+        Given Je verifie que l'element "Header - Lien Achat et Location - Page d'accueil" est affiche
+        #And Je clique sur "Header - Menu - Page d'accueil"
         When Je clique sur "Header - Lien Achat et Location - Page d'accueil"
         And Je clique sur "Header - Lien Audi rent : location courte duree - Page d'accueil"
         And Je clique sur "Page - Bouton Louer une Audi - Location"

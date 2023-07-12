@@ -24,6 +24,7 @@
     "Page - Bouton Choix Modèles Véhicules Disponibles - Page d'accueil": "(//label[contains(@class,'label')])[1]",
     "Page - Bouton Choix Modèle Q8 e-tron Disponible - Page d'accueil": "//span[@class='audi-link-m__text'][normalize-space(.)='Q8 e-tron']",
     "Page - Bouton Choix Modèle A3 sportback Disponible - Page d'accueil": "//span[@class='audi-link-m__text'][normalize-space(.)='A3 Sportback']",
+    "Page - Bouton Choix Modèle Q8 sportback Disponible - Page d'accueil": "//span[@class='audi-link-m__text'][normalize-space(.)='Q8 Sportback e-tron']",
     "Page - Lien Q8 e-tron Neufs Disponibles - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/nouvelles-voitures/results.html#filter=carline.q8etron']",
     "Page - Lien A3 sportback Neufs Disponibles - Page d'accueil": "//a[@href='https://www.audi.fr/fr/web/fr/nouvelles-voitures/results.html#filter=carline.a3sb']",
     "Page - Véhicules neufs - Page d'accueil": "(//span[contains(@class,'text')])[72]",

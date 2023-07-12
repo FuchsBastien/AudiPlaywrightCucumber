@@ -8,8 +8,31 @@
     "Page": "---------------------------------------------------------------------------------------------------------------",
     
     "Page - Trier par - Modeles" : "//span[contains(.,'Trier par')]",
-    "Page - Selecteur prix - Modeles" : "//input[@id='option-byprice-input']",
-    "Page - Selecteur prix affiche - Modeles" : "//output[@id='option-byprice-output']//span[@class='audi-range-slider__js-dynamic-text']",
+
+        
+    "Page - Filtre modele q4-etron - Modeles" :"//label[@id='option-q4-label']",
+    "Page - Filtre modele q8-etron - Modeles" :"//label[@id='option-q8etron-label']",
+    "Page - Filtre modele etron - Modeles" :"//label[@id='option-etron-label']",
+    "Page - Filtre modele etron-gt - Modeles" :"//label[@id='option-etrongt-label']",
+    "Page - Filtre modele a1 - Modeles" :"//label[@id='option-a1-label']",
+    "Page - Filtre modele a3 - Modeles" :"//label[@id='option-a3-label']",
+    "Page - Filtre modele a4 - Modeles" :"//label[@id='option-a4-label']",
+    "Page - Filtre modele a5 - Modeles" :"//label[@id='option-a5-label']",
+    "Page - Filtre modele a6 - Modeles" :"//label[@id='option-a6-label']",
+    "Page - Filtre modele a7 - Modeles" :"//label[@id='option-a7-label']",
+    "Page - Filtre modele a8 - Modeles" :"//label[@id='option-a8-label']",
+    "Page - Filtre modele q2 - Modeles" :"//label[@id='option-q2-label']",
+    "Page - Filtre modele q3 - Modeles" :"//label[@id='option-q3-label']",
+    "Page - Filtre modele q5 - Modeles" :"//label[@id='option-q5-label']",
+    "Page - Filtre modele q7 - Modeles" :"//label[@id='option-q7-label']",
+    "Page - Filtre modele q8 - Modeles" :"//label[@id='option-q8-label']",
+    "Page - Filtre modele tt - Modeles" :"//label[@id='option-tt-label']",
+    "Page - Filtre modele r8 - Modeles" :"//label[@id='option-r8-label']",
+    "Page - Filtre modele rs - Modeles" :"//label[@id='option-RS-label']",
+    "Page - Filtre modele s - Modeles" :"//label[@id='option-S-label']",
+
+    "Page - Filtre type electrique - Modeles" :"//label[@id='option-e-tron-label']",
+    "Page - Filtre type hybride rechargeable - Modeles" :"//label[@id='option-plug-in-hybrid-label']",
     "Page - Filtre type thermique - Modeles" :"//label[@id='option-thermique-label']",
     "Page - Filtre type citadine - Modeles" :"//label[@id='option-compact-label']",
     "Page - Filtre type sportback - Modeles" :"//label[@id='option-sportback-label']",
@@ -22,11 +45,34 @@
     "Page - Filtre type sport - Modeles" :"//label[@id='option-sport-label']",
     "Page - Filtre type roadster - Modeles" :"//label[@id='option-roadster-label']",
     "Page - Filtre type spyder - Modeles" :"//label[@id='option-spyder-label']",
+
+    "Page - Selecteur prix - Modeles" : "//input[@id='option-byprice-input']",
+    "Page - Selecteur prix affiche - Modeles" : "//output[@id='option-byprice-output']//span[@class='audi-range-slider__js-dynamic-text']",
     
 
     "Page - Bouton resultat affiche - Modeles" : "//span[@class='audi-button__text']",
+    "Page - filtre electrique - Modeles" :"//li[@data-id='option-e-tron']",
+    "Page - filtre hybride rechargeable - Modeles" :"//li[@data-id='option-plug-in-hybrid']",
     "Page - filtre thermique - Modeles" : "//li[@data-id='option-thermique']",
+    "Page - filtre citadine - Modeles" : "//li[@data-id='option-compact']",
+    "Page - filtre sportback - Modeles" : "//li[@data-id='option-sportback']",
+    "Page - filtre berline - Modeles" : "//li[@data-id='option-limo']",
+    "Page - filtre cabriolet - Modeles" : "//li[@data-id='option-cabrio']",
+    "Page - filtre avant - Modeles" : "//li[@data-id='option-avant']",
+    "Page - filtre allroad quatro - Modeles" : "//li[@data-id='option-aaq']",
+    "Page - filtre coupe - Modeles" : "//li[@data-id='option-coupe']",
+    "Page - filtre suv - Modeles" : "//li[@data-id='option-suv']",
+    "Page - filtre sport - Modeles" : "//li[@data-id='option-sport']",
+    "Page - filtre roadster - Modeles" : "//li[@data-id='option-roadster']",
+    "Page - filtre spyder - Modeles" : "//li[@data-id='option-spyder']",
     "Page - filtre prix - Modeles" : "//li[@data-id='option-byprice']",
+
+    "Page - premier bouton plus d'informations - Modeles" : "(//a[contains(@class,'car-model-link')])[1]",
+    "Page - bouton configurer - Modeles" : "(//a[contains(.,'Configurer')])[2]",
+    "Page - bouton reserver un essai - Modeles" : "(//a[contains(.,'Réserver un essai')])[2]",
+    
+
+  
 
     "Footer": "--------------------------------------------------------------------------------------------------------------"
 }

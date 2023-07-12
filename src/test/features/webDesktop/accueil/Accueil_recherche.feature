@@ -1,9 +1,5 @@
 Feature: Accueil_recherche
 
-  #Background: 
-    #Given Je suis sur le site "https://www.audi.fr/"
-    #And Je clique sur "Page - Cookies - Page d'accueil"
-    
   Scenario: Accueil_recherche
         #Choisir le modele voulu a travers la recherche
         Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
