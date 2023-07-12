@@ -18,14 +18,14 @@ Feature: Je veux reserver une Audi d'occasion sur Heycar en partant de la page d
         And Je verifie que l'element "Page - Filtre Kilométrage - Page reserver sur Heycar" est affiche
         And Je verifie que l'element "Page - Filtre Couleur du véhicule - Page reserver sur Heycar" est affiche
         And J'attend "3" secondes
-        And Je fais defiler jusqu'a l'element "Page - Réserver Audi Q7 50 TDI 286ch S Edition quattro tiptronic 7 places - Page reserver sur Heycar"
-        When Je clique sur "Page - Réserver Audi Q7 50 TDI 286ch S Edition quattro tiptronic 7 places - Page reserver sur Heycar"
+        And Je fais defiler jusqu'a l'element "Page - premier bouton reserver - Page reserver sur Heycar"
+        When Je clique sur "Page - premier bouton reserver - Page reserver sur Heycar"
 
         #Vos coordonnées
         And J'attend "3" secondes
         And Je verifie que l'element "Page - Titre formulaire coordonnees - Page reserver sur Heycar" est affiche
         And Je verifie que "Page - Titre formulaire coordonnees - Page reserver sur Heycar" affiche le texte "Entrez vos coordonnées pour réserver le véhicule"
-        And Je verifie que le texte "Page - Titre formulaire coordonnees - Page reserver sur Heycar" est de couleur "rgb(48, 48, 48)"
+        And Je verifie que le texte "Page - Titre formulaire coordonnees - Page reserver sur Heycar" est de couleur "Noir"
         And Je clique sur "Page - Sexe M - Page reserver sur Heycar"
         And Je saisis "Jean" dans le champ "Page -  Prenom - Page reserver sur Heycar"
         And Je saisis "Dupont" dans le champ "Page -  Nom - Page reserver sur Heycar"
@@ -37,7 +37,7 @@ Feature: Je veux reserver une Audi d'occasion sur Heycar en partant de la page d
         And Je clique sur "Page -  Accepter condition - Page reserver sur Heycar"
         And Je verifie que l'element "Page -  Suivant vers lieu de rdv - Page reserver sur Heycar" est affiche
         And Je verifie que "Page -  Suivant vers lieu de rdv - Page reserver sur Heycar" affiche le texte "Suivant"
-        And Je verifie que le texte "Page -  Suivant vers lieu de rdv - Page reserver sur Heycar" est de couleur "rgb(255, 255, 255)" 
+        And Je verifie que le texte "Page -  Suivant vers lieu de rdv - Page reserver sur Heycar" est de couleur "Blanc" 
         Then Je clique sur "Page -  Suivant vers lieu de rdv - Page reserver sur Heycar"
 
         #Lieu de rdv
@@ -55,4 +55,4 @@ Feature: Je veux reserver une Audi d'occasion sur Heycar en partant de la page d
         And Je clique sur "Page -  Enregistrer cette carte (Non) - Page reserver sur Heycar"
         Then Je clique sur "Page -  Valider - Page reserver sur Heycar"
         Then Je verifie que "Page -  Numéro de carte non valide - Page reserver sur Heycar" affiche le texte "Numéro de carte non valide"
-        Then Je verifie que le texte "Page -  Numéro de carte non valide - Page reserver sur Heycar" est de couleur "rgb(204, 0, 0)"
+        Then Je verifie que le texte "Page -  Numéro de carte non valide - Page reserver sur Heycar" est de couleur "Rouge"

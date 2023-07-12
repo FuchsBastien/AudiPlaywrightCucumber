@@ -13,18 +13,19 @@ Feature: Reserver_essai
         And Je clique sur "Page - Fermer INFORMATION IMPORTANTE - Espace Reservation"
         And Je verifie que l'element "Page - Reserver un essai - Espace Reservation" est affiche
         And Je verifie que "Page - Reserver un essai - Espace Reservation" affiche le texte "Réserver un essai"
-        And Je verifie que le texte "Page - Reserver un essai - Espace Reservation" est de couleur "rgb(255, 255, 255)"
+        And Je verifie que le texte "Page - Reserver un essai - Espace Reservation" est de couleur "Blanc"
         And Je clique sur "Page - Reserver un essai - Espace Reservation"
         Then Je bascule vers l'iframe "Page - Ifram Reserver un essai - Espace Reservation"
 
         #Saisir mail
+        And J'attend "1" secondes
         And Je verifie que l'element "Page - Identifiez vous - Page offres du moments" est affiche dans l'iframe
         And Je verifie que "Page - Identifiez vous - Page offres du moments" affiche le texte "Identifiez-vous" dans l'iframe
-        And Je verifie que le texte "Page - Identifiez vous - Page offres du moments" est de couleur "rgb(0, 0, 0)" dans l'iframe
+        And Je verifie que le texte "Page - Identifiez vous - Page offres du moments" est de couleur "Noir" dans l'iframe
         And Je saisis "alt.em-bovhbcad@yopmail.com" dans le champ "Page - Saisissez votre email - Espace Reservation" dans l'iframe
         And Je verifie que l'element "Page - Valider votre email - Espace Reservation" est affiche dans l'iframe
         And Je verifie que "Page - Valider votre email - Espace Reservation" affiche le texte "Valider" dans l'iframe
-        And Je verifie que le texte "Page - Valider votre email - Espace Reservation" est de couleur "rgb(255, 255, 255)" dans l'iframe
+        And Je verifie que le texte "Page - Valider votre email - Espace Reservation" est de couleur "Blanc" dans l'iframe
         Then Je clique sur "Page - Valider votre email - Espace Reservation" dans l'iframe
 
         #Connecter a mon espace
@@ -34,7 +35,7 @@ Feature: Reserver_essai
         #Completez les informations
         And Je verifie que l'element "Page - Completez les informations - Page offres du moments" est affiche
         And Je verifie que "Page - Completez les informations - Page offres du moments" affiche le texte "Complétez les informations"
-        And Je verifie que le texte "Page - Completez les informations - Page offres du moments" est de couleur "rgb(0, 0, 0)"
+        And Je verifie que le texte "Page - Completez les informations - Page offres du moments" est de couleur "Noir"
         And Je clique sur "Page - Delai d'achat - Espace Reservation"
         And Je clique sur "Page - Plus de 12 mois - Espace Reservation"
         And Je clique sur "Page - Type d'achat - Espace Reservation"
@@ -47,16 +48,16 @@ Feature: Reserver_essai
         And Je clique sur "Page - AUDI SEINE (1.6KM) - Espace Reservation"
         And Je verifie que l'element "Page - Suivant - Espace Reservation" est affiche
         And Je verifie que "Page - Suivant - Espace Reservation" affiche le texte "Suivant"
-        And Je verifie que le texte "Page - Suivant - Espace Reservation" est de couleur "rgb(255, 255, 255)"
+        And Je verifie que le texte "Page - Suivant - Espace Reservation" est de couleur "Blanc"
         Then Je clique sur "Page - Suivant - Espace Reservation"
 
         #Validez votre demande
         And Je verifie que l'element "Page - Validez votre demande - Page offres du moments" est affiche
         And Je verifie que "Page - Validez votre demande - Page offres du moments" affiche le texte "Validez votre demande"
-        And Je verifie que le texte "Page - Validez votre demande - Page offres du moments" est de couleur "rgb(0, 0, 0)"
+        And Je verifie que le texte "Page - Validez votre demande - Page offres du moments" est de couleur "Noir"
         When Je clique sur "Page - Gener M - Espace Reservation"
         And Je clique sur "Page - Cocher J'accepte les conditions - Espace Reservation"
         And Je verifie que l'element "Page - Envoyer - Espace Reservation" est affiche
         And Je verifie que "Page - Envoyer - Espace Reservation" affiche le texte "Envoyer"
-        And Je verifie que le texte "Page - Envoyer - Espace Reservation" est de couleur "rgb(255, 255, 255)"
+        And Je verifie que le texte "Page - Envoyer - Espace Reservation" est de couleur "Blanc"
         Then Je clique sur "Page - Envoyer - Espace Reservation"
