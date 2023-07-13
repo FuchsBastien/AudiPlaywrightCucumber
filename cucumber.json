@@ -10,13 +10,13 @@
         "publishQuiet": true,
         "dryRun": false,
         "require": [
-            "src/test/steps/commun/action.js",
+            "src/test/steps/commun/*.js",
             "src/hook/hook.js"
         ],  
 
         "format": [
             "progress-bar",
-            "json:reporting/cucumber-reports.json"
+            "json:reporting/rapports/cucumber-reports.json"
         ]
     }  
 }

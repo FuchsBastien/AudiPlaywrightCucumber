@@ -13,15 +13,19 @@
     "Page - Selection Délai d'achat Moins de 6 mois - Page formulaire": "//li[text()='Moins de 6 mois']",
     "Page - Selection Usage - Page formulaire": "//select[@id='information_request_usage']",
     "Page - Selection Usage bis - Page formulaire": "//div[@class='select-wrapper info_usage']",
-    "Page - Selection Usage Privé - Page formulaire": "//li[text()='Privé']",
+    "Page - Selection Usage Prive - Page formulaire": "//li[text()='Privé']",
+    "Page - Selection Usage Professionnel - Page formulaire": "//li[text()='Professionnel']",
     "Page - Bouton Suivant - Page formulaire": "//button[@id='info_gotostep3']",
+    "Page - Coche Sexe Masculin - Page formulaire": "//label[text()='M']",
+    "Page - Coche Sexe Feminin - Page formulaire": "//label[text()='F']",
     "Page - Champ Nom - Page formulaire": "//input[@id='info_name']",
     "Page - Champ Prénom - Page formulaire": "//input[@id='info_firstname']",
     "Page - Champ Téléphone - Page formulaire": " //input[@id='info_tel']",
     "Page - Selection Année de Naissance - Page formulaire": "//div[@class='input-field info_age']",
     "Page - Selection Année de Naissance 1990 - Page formulaire": "//li[text()='1990']",
+    "Page - Selection Année de Naissance 1995 - Page formulaire": "//li[text()='1995']",
     "Page - Coche Transmission de Donnée - Page formulaire": "//label[@for='info_approve']",
-    "Page - Coche Sexe Masculin - Page formulaire": "//label[text()='M']",
+   
     
 
     

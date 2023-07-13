@@ -10,9 +10,6 @@ module.exports = async function changerOnglet(page, numOnglet) {
     //console.log(pages);
     //const nouvellePage = pages[1];
     page = pages[numOnglet];
+    await page.waitForTimeout(2000);
     return page;
-    //let barre = await nouvellePage.locator("//input[contains(@id,'info_ctc_email')]");
-    //let barre = await nouvellePage.locator("//button[@class='button']");
-    //await barre.click();
-    //await barre.fill("bastien");
 }

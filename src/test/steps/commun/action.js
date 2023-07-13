@@ -11,6 +11,7 @@ const AccederIframe = require('../../support/commun/navigation/accederIframe');
 const CliquerSurIframe = require('../../support/commun/action/cliquerSurIframe');
 const SaisirTexteIframe = require('../../support/commun/action/saisirTexteIframe');
 const AttendreSecondes = require('../../support/commun/navigation/attendreSecondes');
+const CliquerSurSelecteur = require('../../support/commun/action/cliquerSurSelecteur');
 const CliquerSurSelecteurIframe = require('../../support/commun/action/cliquerSurSelecteurIframe');
 const DefilerJusquaElement = require('../../support/commun/action/defilerJusquaElement');
 const SelectionnerCurseur = require('../../support/commun/action/selectionnerCurseur');
@@ -41,6 +42,7 @@ After(async function (scenario) {
 });*/
 
 
+
 Given(/^Je clique sur "(.*)"$/, {timeout: 25000}, async (locateur, ) =>  {
     await CliquerSur(page, locateur)
 });
@@ -50,7 +52,7 @@ Given(/^Je clique sur "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur)
 });
 
 Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)"$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
-    await CliquerSurSelecteurIframe(page, choixSelecteur, locateurSelecteur);
+    await CliquerSurSelecteur(page, choixSelecteur, locateurSelecteur);
 });
 
 Given(/^Je clique sur le choix "(.*)" du selecteur "(.*)" dans l'iframe$/, {timeout: 25000}, async (choixSelecteur, locateurSelecteur) =>  {
@@ -103,7 +105,7 @@ Given(/^Je bascule vers l'iframe "(.*)"$/, {timeout: 25000}, async (iframeLocato
 
 Given(/^J'attend "(.*)" secondes$/, {timeout: 25000}, async (secondesAAttendre) => {
     await AttendreSecondes(page, secondesAAttendre)
-});
+})
 
 Given( /^Je verifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
     await VerifierTexteElement(page, locateur, texteAffiche);
@@ -128,6 +130,5 @@ Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)"$/, {timeout: 25000}
 Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)" dans l'iframe$/, {timeout: 25000}, async (locateur, couleur) => {
     await VerifierCouleurTexte(iframe, locateur, couleur);
 });
-
 
 
