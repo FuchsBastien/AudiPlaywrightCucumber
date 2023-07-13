@@ -138,15 +138,3 @@ Given(/^Je verifie que le titre de l'onglet est "(.*)"$/, {timeout: 25000}, asyn
 });*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
