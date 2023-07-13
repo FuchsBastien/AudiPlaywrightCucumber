@@ -1,6 +1,6 @@
 Feature: je fais la manipulation de depart qui me permettra de payer un contrat d'entretien de ma Audi
 
-    Scenario:Contrat_entretient
+    Scenario:Contrat_entretien
         Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
         And Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
         When Je clique sur "Header - Menu - Page d'accueil"
