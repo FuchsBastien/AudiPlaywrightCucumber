@@ -136,3 +136,5 @@ Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)" dans l'iframe$/, {t
 Given(/^Je verifie que le titre de l'onglet est "(.*)"$/, {timeout: 25000}, async (titre) => {
     await VerifierTitrePage(page, titre);
 });*/
+
+
