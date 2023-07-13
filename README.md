@@ -1,15 +1,16 @@
 # AudiPlaywrightCucumber
 
-Pojet d'automatisation des tests fonctionnels effectués sur Audi.fr
+Projet d'automatisation de tests fonctionnels effectués sur https://www.audi.fr/
 
 ## Prerequis
 
-### Node version >=12
+1. Node version >=12
 
 Une version stable est disponible [ici](https://nodejs.org/dist/latest-v12.x/)
 Pour installer nodeJS sans droits d'admin : https://theshravan.net/blog/how-to-use-node-and-npm-without-installation-or-admin-rights/
 
-### Java >=v18
+2. Java >=v18
+
 
 ## Installation du projet
 
@@ -22,9 +23,9 @@ https://github.com/FuchsBastien/AudiPlaywrightCucumber.git
 3. Installer les dépendances (`npm install`)
 
 
-## Execution des tests en local
+## Exécution des tests en local
 
-1. Configurer le fichier de configuration (_cucumber.json)
+1. Configurer le fichier de configuration (cucumber.json)
 
 Les valeurs a modifier sont principalement :
 - path
@@ -35,24 +36,34 @@ chemin des actions génériques
 chemin des rapports de test
 
 
-2. Exéxuter la commande dans le terminal
+2. Exécuter la commande dans le terminal
 
 ```nodejs
 $ npm run test
 ```
 
-## Générateur d'actions en code playwright 
 
-2. Exéxuter la commande dans le terminal
+## Générateur de code d'actions avec playwright 
+
+1. Exécuter la commande dans le terminal
 
 ```nodejs
 $ npx playwright codegen https://www.audi.fr/
 ```
 
 
-## Génération du rapport d'exécution
+## Générateur de rapport d'exécution
 
-Pour chaque feature exécutée, un fichier .html est généré automatiquement, contenant toutes les informations utiles telles que le résultat, le temps d'exécution, le screenshot de l'erreur etc.
+Pour chaque test exécutée, un fichier cucumber-reports.json est généré automatiquement (/reporting/rapports), contenant toutes les informations utiles des features telles que le résultat, les étapes, le temps d'exécution, le screenshot de l'erreur etc.
+
+
+1. Exécuter la commande dans le terminal après la commande d'exécution du test
+
+```nodejs
+$ npm run report
+```
+
+A partir de ce fichier cucumber-reports.json  la commande ci-dessus permet de générer un fichier index.html (/reporting/rapports) auquel vient s'ajouter un graphique en camembert des features et scenarios passed et failed ainsi qu'un fichier .html pour chaque feature executée (/reporting/rapports/features)
 
 
 ### Les extensions VS Code utiles (quasi indispensables)
