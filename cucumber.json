@@ -5,7 +5,7 @@
         },
         
         "paths": [
-            "src/test/features/webDesktop/accueil/Reservation_voiture_neuve.feature"
+            "src/test/features/webDesktop/accueil/Achat_voiture_haut_gamme.feature"
         ],
         "publishQuiet": true,
         "dryRun": false,

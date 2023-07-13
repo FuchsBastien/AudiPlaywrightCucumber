@@ -1,7 +1,8 @@
 Feature: Configuration_voiture
 
     Scenario: Configuration_voiture
-        Given Je verifie que l'element "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil" est affiche
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je verifie que l'element "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil" est affiche
         And Je verifie que "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil" affiche le texte "Découvrir l’Audi Q4 e-tron"
         And Je verifie que le texte "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil" est de couleur "Noir"
         When Je clique sur "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil"
@@ -71,6 +72,7 @@ Feature: Configuration_voiture
         And Je verifie que le texte "Page - Enregistrer la configuration - Espace configuration" est de couleur "Noir"
         When Je clique sur "Page - Enregistrer la configuration - Espace configuration"
         And Je clique sur "Page - Se conecter - Espace configuration"
+        And Je verifie que le titre de l'onglet est "Bienvenue – Saisir e-mail"
         And Je saisis "bastien.fuchs@outlook.fr" dans le champ "Page - Champ mail - Espace Personnel"
         And Je clique sur "Page - Bouton suivant - Espace Personnel"
         And Je saisis "testGroupBA" dans le champ "Page - Champ password - Espace Personnel"

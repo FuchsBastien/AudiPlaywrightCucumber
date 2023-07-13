@@ -7,7 +7,7 @@ Before({timeout: 25000}, async function () {
     let url = "https://www.audi.fr/"
     browser = await chromium.launch({headless: false, slowMo: 400});
     page = await browser.newPage();
-    await page.setViewportSize({ width: 1700, height: 1700 });
+    //await page.setViewportSize({ width: 1700, height: 1700 });
     await page.goto(url);
     //cliquer sur les cookies
     let cookies = "Page - Cookies - Page d'accueil"

@@ -1,8 +1,9 @@
 Feature: Etre_rappele
 
     Scenario: Etre_rappele
-        #Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
-        #When Je clique sur "Header - Menu - Page d'accueil"
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+        When Je clique sur "Header - Menu - Page d'accueil"
         And Je verifie que l'element "Header - Modeles - Page d'accueil" est affiche
         And Je clique sur "Header - Modeles - Page d'accueil"
         And Je verifie que l'element "Header - Pour les professionnels - Page d'accueil" est affiche

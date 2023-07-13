@@ -3,8 +3,9 @@ Feature: Louer_voiture
     Scenario: Louer_voiture
 
         #Accès Louer une Audi
-        Given Je verifie que l'element "Header - Lien Achat et Location - Page d'accueil" est affiche
-        #And Je clique sur "Header - Menu - Page d'accueil"
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+        And Je clique sur "Header - Menu - Page d'accueil"
         When Je clique sur "Header - Lien Achat et Location - Page d'accueil"
         And Je clique sur "Header - Lien Audi rent : location courte duree - Page d'accueil"
         And Je clique sur "Page - Bouton Louer une Audi - Location"

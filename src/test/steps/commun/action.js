@@ -132,3 +132,19 @@ Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)" dans l'iframe$/, {t
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+const VerifierTitrePage = require('../../support/commun/verification/verifierTitrePage');
+
+Given(/^Je verifie que le titre de l'onglet est "(.*)"$/, {timeout: 25000}, async (titre) => {
+    await VerifierTitrePage(page, titre);
+});

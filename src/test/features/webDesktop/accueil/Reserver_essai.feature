@@ -1,7 +1,8 @@
 Feature: Reserver_essai
 
     Scenario: Reserver_essai
-        Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
         When Je clique sur "Header - Menu - Page d'accueil"
         And Je verifie que l'element "Header - Modeles - Page d'accueil" est affiche
         And Je clique sur "Header - Modeles - Page d'accueil"
@@ -61,3 +62,4 @@ Feature: Reserver_essai
         And Je verifie que "Page - Envoyer - Espace Reservation" affiche le texte "Envoyer"
         And Je verifie que le texte "Page - Envoyer - Espace Reservation" est de couleur "Blanc"
         Then Je clique sur "Page - Envoyer - Espace Reservation"
+        And Je verifie que le titre de l'onglet est "myAudi"

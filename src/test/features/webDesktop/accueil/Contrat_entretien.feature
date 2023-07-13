@@ -1,7 +1,8 @@
 Feature: je fais la manipulation de depart qui me permettra de payer un contrat d'entretien de ma Audi
 
     Scenario:Contrat_entretien
-        Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
         When Je clique sur "Header - Menu - Page d'accueil"
         And Je verifie que l'element "Header - Lien Votre Audi - Page d'accueil" est affiche
         And Je clique sur "Header - Lien Votre Audi - Page d'accueil"
@@ -18,6 +19,7 @@ Feature: je fais la manipulation de depart qui me permettra de payer un contrat 
         And Je verifie que le texte "Page - Souscrire - Espace Entretenir Mon Audi" est de couleur "Noir"
         And Je clique sur "Page - Souscrire - Espace Entretenir Mon Audi"
         And Je vais sur l'onglet "1"
+        And Je verifie que le titre de l'onglet est "Audi France"
         When Je clique sur "Page - Cookies - Espace Entretenir Mon Audi"
         And Je fais defiler jusqu'a l'element "Page - Immatriculation - Espace Entretenir Mon Audi"
         And Je saisis "AB-123-CD" dans le champ "Page - Immatriculation - Espace Entretenir Mon Audi"

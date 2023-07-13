@@ -3,6 +3,7 @@ Feature: Reservation_voiture_neuve
   Scenario: Reservation_voiture_neuve
   
       #Accès Choix Modèle Neuf Disponible
+      Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
       When Je clique sur "Page - Bouton Choix Modèles Véhicules Disponibles - Page d'accueil"
       And Je verifie que l'element "Page - Bouton Decouvrir Audi Q4 e-tron - Page d'accueil" est affiche
       And Je clique sur "Page - Bouton Choix Modèle <modele> Disponible - Page d'accueil"
@@ -18,6 +19,7 @@ Feature: Reservation_voiture_neuve
       #Formulaire Enregistrement
       And J'attend "10" secondes
       And Je vais sur l'onglet "1"
+      And Je verifie que le titre de l'onglet est "myAudi"
       And Je verifie que "Page - Titre Identifiez vous - Page formulaire" affiche le texte "Identifiez-vous"
       And Je verifie que le texte "Page - Titre Identifiez vous - Page formulaire" est de couleur "Noir"
       And Je saisis "<mail>" dans le champ "Page - Champ Mail - Page formulaire"
