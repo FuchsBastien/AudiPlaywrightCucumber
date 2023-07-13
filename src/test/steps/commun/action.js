@@ -3,16 +3,17 @@ const CliquerSur = require('../../support/commun/action/cliquerSur');
 const SaisirTexte = require('../../support/commun/action/saisirTexte');
 const TaperTouche = require('../../support/commun/action/taperTouche');
 const Cocher = require('../../support/commun/action/cocher');
-const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
-const VerifierTexteElement = require('../../support/commun/verification/verifierTexteElement');
-const VerifierElementVisible = require('../../support/commun/verification/verifierElementVisible');
-const VerifierCouleurTexte = require('../../support/commun/verification/verifierCouleurTexte');
-const AccederIframe = require('../../support/commun/navigation/accederIframe');
+//const ChangerOnglet = require('../../support/commun/navigation/changerOnglet');
+//const VerifierTexteElement = require('../../support/commun/verification/verifierTexteElement');
+//const VerifierElementVisible = require('../../support/commun/verification/verifierElementVisible');
+//const VerifierCouleurTexte = require('../../support/commun/verification/verifierCouleurTexte');
+//const VerifierTitrePage = require('../../support/commun/verification/verifierTitrePage');
+//const AccederIframe = require('../../support/commun/navigation/accederIframe');
 const CliquerSurIframe = require('../../support/commun/action/cliquerSurIframe');
 const SaisirTexteIframe = require('../../support/commun/action/saisirTexteIframe');
-const AttendreSecondes = require('../../support/commun/navigation/attendreSecondes');
+//const AttendreSecondes = require('../../support/commun/navigation/attendreSecondes');
 const CliquerSurSelecteurIframe = require('../../support/commun/action/cliquerSurSelecteurIframe');
-const DefilerJusquaElement = require('../../support/commun/action/defilerJusquaElement');
+//const DefilerJusquaElement = require('../../support/commun/action/defilerJusquaElement');
 const SelectionnerCurseur = require('../../support/commun/action/selectionnerCurseur');
 
 //const AccederSite = require('../../support/commun/navigation/accederSite');
@@ -69,13 +70,13 @@ Given(/^Je tape sur la touche du clavier "([^"]*)?"$/, {timeout: 30000}, async (
     await TaperTouche(page, toucheClavier)
 });
 
-Given(/^Je fais defiler jusqu'a l'element "(.*)"$/, async (locateur) => {
+/*Given(/^Je fais defiler jusqu'a l'element "(.*)"$/, async (locateur) => {
     await DefilerJusquaElement(page, locateur);
 });
 
 Given(/^Je fais defiler jusqu'a l'element "(.*)" dans l'iframe$/, async (locateur) => {
     await DefilerJusquaElement(iframe, locateur);
-});  
+});*/
 
 Given( /^Je selectionne "(.*)" dans le curseur "(.*)"$/, {timeout: 25000}, async (nombre, locateur) =>  {  
     await SelectionnerCurseur(page, nombre, locateur);
@@ -93,7 +94,7 @@ Given(/^Je coche la case "(.*)" dans l'iframe$/,async (locateur) =>  {
     await Cocher(iframe, locateur)
 });
 
-Given(/^Je vais sur l'onglet "(.*)"$/, {timeout: 25000}, async (numOnglet) =>  {
+/*Given(/^Je vais sur l'onglet "(.*)"$/, {timeout: 25000}, async (numOnglet) =>  {
     page = await ChangerOnglet(page, numOnglet)
 });
 
@@ -129,5 +130,6 @@ Given(/^Je verifie que le texte "(.*)" est de couleur "(.*)" dans l'iframe$/, {t
     await VerifierCouleurTexte(iframe, locateur, couleur);
 });
 
-
-
+Given(/^Je verifie que le titre de l'onglet est "(.*)"$/, {timeout: 25000}, async (titre) => {
+    await VerifierTitrePage(page, titre);
+});*/

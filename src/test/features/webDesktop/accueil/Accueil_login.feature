@@ -1,7 +1,8 @@
 Feature: Accueil_login
 
   Scenario: Accueil_login
-    Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+    Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+    And Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
     When Je clique sur "Header - Menu - Page d'accueil"
     And Je verifie que l'element "Header - Lien Votre Audi - Page d'accueil" est affiche
     And Je clique sur "Header - Lien Votre Audi - Page d'accueil"
@@ -12,6 +13,7 @@ Feature: Accueil_login
     And Je clique sur "Page - Cookies - Espace Personnel"
     And Je clique sur "Page - Bouton poursuivre vers myAudi - Espace Personnel"
     And Je clique sur "Page - Bouton c'est parti - Espace Personnel"
+    And Je verifie que le titre de l'onglet est "Bienvenue – Saisir e-mail"
     And Je saisis "bastien.fuchs@outlook.fr" dans le champ "Page - Champ mail - Espace Personnel"
     And Je verifie que l'element "Page - Bouton suivant - Espace Personnel" est affiche
     And Je clique sur "Page - Bouton suivant - Espace Personnel"
@@ -19,6 +21,7 @@ Feature: Accueil_login
     And Je verifie que l'element "Page - Bouton suivant - Espace Personnel" est affiche
     And Je clique sur "Page - Bouton suivant - Espace Personnel"
     And J'attend "3" secondes
+    And Je verifie que le titre de l'onglet est "myAudi – Bienvenue"
     And Je verifie que l'element "Page - Bouton Mon nom" est affiche
     And Je verifie que "Page - Bouton Mon nom" affiche le texte "Bastien"
     And Je verifie que le texte "Page - Bouton Mon nom" est de couleur "Noir"

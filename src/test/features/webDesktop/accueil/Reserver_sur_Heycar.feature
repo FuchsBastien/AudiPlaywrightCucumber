@@ -1,12 +1,14 @@
 Feature: Je veux reserver une Audi d'occasion sur Heycar en partant de la page d'acceuil du site d'Audi
 
     Scenario: reserver une Audi sur le site Heycar
-        Given Je fais defiler jusqu'a l'element "Footer - Heycar - Page d'accueil"
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je fais defiler jusqu'a l'element "Footer - Heycar - Page d'accueil"
         And Je verifie que l'element "Footer - Heycar - Page d'accueil" est affiche
         When Je clique sur "Footer - Heycar - Page d'accueil"
         Then Je vais sur l'onglet "1"
 
         #définir les filtres de recherche
+        And Je verifie que le titre de l'onglet est "Audi d'occasion de qualité et garanties"
         When Je clique sur "Page - Continuez sans accepter - Page reserver sur Heycar"
         And Je clique sur "Page - Region - Page reserver sur Heycar"
         And Je saisis "Île-de-France" dans le champ "Page - Champ saisir region - Page reserver sur Heycar"

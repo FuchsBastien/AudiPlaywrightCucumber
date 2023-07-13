@@ -1,7 +1,8 @@
 Feature:Je shouaite regarder les offres du moments des voitures electriques pour obtenir une offre
 
 	Scenario: Obtenir_offre_voiture_electrique
-        Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
         And Je clique sur "Header - Menu - Page d'accueil"
         And Je verifie que l'element "Header - Lien Achat et Location - Page d'accueil" est affiche
 		And Je clique sur "Header - Lien Achat et Location - Page d'accueil"
@@ -64,6 +65,7 @@ Feature:Je shouaite regarder les offres du moments des voitures electriques pour
         And Je verifie que le texte "Page - Envoyer - Espace Reservation" est de couleur "Blanc"
         Then Je clique sur "Page - Envoyer - Espace Reservation"
         And J'attend "3" secondes
+        And Je verifie que le titre de l'onglet est "myAudi"
         And Je verifie que l'element "Page - Image - Page offres du moments" est affiche
         And Je verifie que l'element "Page - Message - Page offres du moments" est affiche
         And Je verifie que "Page - Message - Page offres du moments" affiche le texte "Votre demande a bien été prise en compte."

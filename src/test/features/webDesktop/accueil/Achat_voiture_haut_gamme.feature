@@ -1,7 +1,8 @@
 Feature: Acheter une voiture avec le critère de recherche 'Haut de gamme'
 
     Scenario: je réserve une Audi Haut de gamme (Audi A6 allroad quattro)
-        Given Je fais defiler jusqu'a l'element "Page - Véhicules neufs - Page d'accueil"
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je fais defiler jusqu'a l'element "Page - Véhicules neufs - Page d'accueil"
         And Je verifie que l'element "Page - Véhicules neufs - Page d'accueil" est affiche
         When Je clique sur "Page - Véhicules neufs - Page d'accueil"
         And Je clique sur "Page - Réinitialiser tous les filtres - Espace voiture Haut de Gamme"
@@ -18,6 +19,7 @@ Feature: Acheter une voiture avec le critère de recherche 'Haut de gamme'
         Then Je vais sur l'onglet "1"
 
         #Saisir les informations de Contacte
+        And Je verifie que le titre de l'onglet est "Réserver votre Audi!"
         When Je clique sur "Page - Refus cookies - Espace voiture Haut de Gamme"
         And Je verifie que l'element "Page - Titre Formulaire (Contact) - Espace voiture Haut de Gamme" est affiche
         And Je verifie que "Page - Titre Formulaire (Contact) - Espace voiture Haut de Gamme" affiche le texte "Contact"
@@ -52,6 +54,7 @@ Feature: Acheter une voiture avec le critère de recherche 'Haut de gamme'
         Then Je clique sur "Page - Proceder au paiement - Espace voiture Haut de Gamme"
 
         #Saisir les informations de Paiement
+        And Je verifie que le titre de l'onglet est "Réserver votre Audi!"
         And Je clique sur "Page - Fermer Annonce - Page offres du moments"
         When Je bascule vers l'iframe "Page - Iframe Card Number - Espace voiture Haut de Gamme"
         And Je saisis "0605 1761 7548 0125" dans le champ "Page - Card Number - Espace voiture Haut de Gamme" dans l'iframe

@@ -2,7 +2,8 @@ Feature: En ayant un compte sur ce site , je veux configurée une Q5 qui est le 
 
     Scenario: Configurer_voiture_Q5
         #Choisir le modele voulu
-        Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
         And Je clique sur "Header - Menu - Page d'accueil"
         And Je verifie que l'element "Header - Modeles - Page d'accueil" est affiche
         And Je clique sur "Header - Modeles - Page d'accueil"
@@ -59,6 +60,7 @@ Feature: En ayant un compte sur ce site , je veux configurée une Q5 qui est le 
         And Je verifie que le texte "Page - Enregistrer la configuration - Espace configuration" est de couleur "Noir"
         When Je clique sur "Page - Enregistrer la configuration - Espace configuration"
         And Je clique sur "Page - Se conecter - Espace configuration"
+        And Je verifie que le titre de l'onglet est "Bienvenue – Saisir e-mail"
         And Je saisis "bastien.fuchs@outlook.fr" dans le champ "Page - Champ mail - Espace Personnel"
         And Je clique sur "Page - Bouton suivant - Espace Personnel"
         And Je saisis "testGroupBA" dans le champ "Page - Champ password - Espace Personnel"

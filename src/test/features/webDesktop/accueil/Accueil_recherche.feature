@@ -2,7 +2,8 @@ Feature: Accueil_recherche
 
   Scenario: Accueil_recherche
         #Choisir le modele voulu a travers la recherche
-        Given Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
+        Given Je verifie que le titre de l'onglet est "Accueil | Audi.fr | Audi France"
+        And Je verifie que l'element "Header - Menu - Page d'accueil" est affiche
         When Je clique sur "Header - Menu - Page d'accueil"
         And Je verifie que l'element "Header - Logo Recherche - Page d'accueil" est affiche
         And Je clique sur "Header - Logo Recherche - Page d'accueil"
@@ -44,6 +45,7 @@ Feature: Accueil_recherche
         And Je verifie que "Page - Enregistrer la configuration - Espace configuration" affiche le texte "Enregistrer la configuration"
         When Je clique sur "Page - Enregistrer la configuration - Espace configuration"
         And Je clique sur "Page - Se conecter - Espace configuration"
+        And Je verifie que le titre de l'onglet est "Bienvenue – Saisir e-mail"
         And Je saisis "bastien.fuchs@outlook.fr" dans le champ "Page - Champ mail - Espace Personnel"
         And Je clique sur "Page - Bouton suivant - Espace Personnel"
         And Je saisis "testGroupBA" dans le champ "Page - Champ password - Espace Personnel"
