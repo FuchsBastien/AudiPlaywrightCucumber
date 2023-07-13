@@ -3,37 +3,26 @@ const AttendreSecondes  = require('../navigation/attendreSecondes');
 
 /**
  * Cliquer sur un bouton dans un iframe
- * @param  {String} locateur - locateur de l'element dans lequel cliquer
+ * @param  {String} locateurSelecteur - locateur de l'element dans lequel cliquer
+ * @param  {String} choixSelecteur - locateur de l'element dans lequel cliquer
  * @param  {String} page - locateur de la page dans lequel cliquer
  */
 
-module.exports = async function cliquerSur(page, locateur) {
-    console.log("fonction cliquerSur");
+module.exports = async function cliquerSurSelecteur(page, choixSelecteur, locateurSelecteur) {
+    console.log("fonction cliquerSurSelecteur");
+    console.log(choixSelecteur);
   
     try {
-        const aliasLocateur = locateur;
-        locateur          = GetLocateur(aliasLocateur);
-        const element       = await page.locator(locateur);
+        const aliasLocateur = String(locateurSelecteur);
+        locateurSelecteur          = GetLocateur(aliasLocateur);
+        const element        = await page.locator(locateurSelecteur);
         console.log(element);
 
-        let i =0;
-        let elementVisible = false;
-        while(elementVisible == false && i<7) {
-            console.log("ok");
-            await page.waitForTimeout(1000);
-            elementVisible = await element.isVisible();
-            if(elementVisible == true) {
-                break;
-            }
-            i++;
-        }
-    
-        if(elementVisible == true) {  
-            await element.click();
-        } else {
-            throw Error("\n      Echec dans le click sur l'element, '" + aliasLocateur + "' n'est pas affiche \n");
-        }
-    
+        //if (await element.isVisible()) {
+            //AttendreSecondes(page, 1);
+            await element.selectOption(choixSelecteur);
+        //}
+
     } catch(error) {
         throw Error(error);
     }

@@ -105,7 +105,7 @@ Given(/^Je bascule vers l'iframe "(.*)"$/, {timeout: 25000}, async (iframeLocato
 
 Given(/^J'attend "(.*)" secondes$/, {timeout: 25000}, async (secondesAAttendre) => {
     await AttendreSecondes(page, secondesAAttendre)
-});
+})
 
 Given( /^Je verifie que "(.*)" affiche le texte "(.*)"$/, {timeout: 25000}, async (locateur, texteAffiche) =>  {
     await VerifierTexteElement(page, locateur, texteAffiche);

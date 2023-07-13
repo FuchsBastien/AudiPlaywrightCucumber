@@ -16,7 +16,7 @@
 
         "format": [
             "progress-bar",
-            "json:reporting/cucumber-reports.json"
+            "json:reporting/rapports/cucumber-reports.json"
         ]
     }  
 }

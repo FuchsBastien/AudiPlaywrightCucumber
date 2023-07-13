@@ -14,11 +14,11 @@ Before({timeout: 25000}, async function () {
     await CliquerSur(page, cookies) 
 })
 
-After({timeout: 25000}, async function (scenario) {
+After({timeout: 30000}, async function (scenario) {
     //screenshot si erreur
     if (scenario.result.status === 'FAILED') {
-    const screenshotPath = `./reporting/screenshots/${scenario.pickle.name}.png`
-    const img = await page.screenshot({ path: screenshotPath });
+    //const screenshotPath = `./reporting/screenshots/${scenario.pickle.name}.png`
+    const img = await page.screenshot();
     await this.attach(img, 'image/png');
     }
     //fermeture navigateur et page
